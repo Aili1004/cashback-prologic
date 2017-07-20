@@ -19,4 +19,7 @@ class CashbacksController < ApplicationController
 
   def gift_with_purchase
   end
+
+  def eftpos_cash_back_cards
+  end
 end
