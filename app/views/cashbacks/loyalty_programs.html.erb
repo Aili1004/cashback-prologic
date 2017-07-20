@@ -1,7 +1,7 @@
 <!-- Header -->
 <section id="header-container">
   <header id="header">
-    <!-- Logo -->
+      <!-- Logo -->
     <a id="logo" href="<%= @home_page %>">
       <img class="<%= @logo_class %>" src="<%= @logo %>" />
     </a>
@@ -16,11 +16,11 @@
       <ul id="menu">
         <li><a href="<%= @home_page %>">Home</a></li>
         <li class="current-menu-parent">
-          <a href="<%= cashback_promotions_path %>">Solutions</a>
+          <a href="cashback-promotions.html">Solutions</a>
           <ul>
-            <li class="current-menu-item"><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
+            <li><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
             <li><a href="<%= cashback_payments_and_distribution_path %>">Cashback Payments and Distribution</a></li>
-            <li><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
+            <li class="current-menu-item"><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
             <li><a href="competitions-sweepstakes-and-games.html">Competitions, Sweepstakes and Games</a></li>
             <li><a href="promotion-management.html">Promotion Management</a></li>
             <li><a href="gift-with-purchase.html">Gift With Purchase</a></li>
@@ -49,9 +49,9 @@
         <li class="current-menu-parent">
           <a href="<%= cashback_promotions_path %>">Solutions</a>
           <ul>
-            <li class="current-menu-item"><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
+            <li><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
             <li><a href="<%= cashback_payments_and_distribution_path %>">Cashback Payments and Distribution</a></li>
-            <li><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
+            <li class="current-menu-item"><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
             <li><a href="competitions-sweepstakes-and-games.html">Competitions, Sweepstakes and Games</a></li>
             <li><a href="promotion-management.html">Promotion Management</a></li>
             <li><a href="gift-with-purchase.html">Gift With Purchase</a></li>
@@ -66,32 +66,35 @@
   </header>
 </section>
 
+
 <!-- Page Banner -->
-<section id="page-banner-container" style="background: transparent url(images/cashback-banner.jpg) no-repeat center center;">
-  <article id="page-banner">
-    <h1>Cashback Promotions</h1>
-    <h2>Giving your customers the rewards they deserve</h2>
-  </article>
+<section id="page-banner-container" style="background: transparent url(images/loyalty-banner.jpg) no-repeat center center;">
+    <article id="page-banner">
+        <h1>Loyalty Programs</h1>
+        <h2>Strengthening customer engagement and increasing sales</h2>
+    </article>
 </section>
 
 <!-- Wrapper -->
 <div id="wrapper">
   <!-- Content -->
   <section class="container">
-    <article class="content zero-padding">
+    <article class="content">
       <!-- Column Left -->
       <div class="column-left column">
-        <p>At Cashback.com.au, we manage consumer promotions from the planning stages right through to payment and dispatch. Our campaigns are tailor-made to your business and your customer’s needs, emphasising value for money while helping improve customer retention and sales.</p>
-        <p>As industry leaders we understand that in order to be successful we have to contribute to your bottom line. Our experience and industry knowledge means that our services are used by some of the world’s most powerful brands.</p>
+        <img src="images/loyalty-image-1.jpg" />
       </div>
 
       <!-- Column Right -->
       <div class="column-right column">
-        <img class="alignleft" src="images/cashback-image-1.png" />
+        <p>Consumer loyalty programs offer one of the most cost-effective means of engagement and promotion. By maximising retention as well as drawing in customers from competitors, this is a marketing strategy that can cost little and generate exceptional rewards.</p>
+        <p>Devices such as EFTPOS Cash Back cards in particular add value to your brand and bottom line by increasing visibility and customer engagement – but it’s not just about sales. Leveraging customer data can be what takes your business to the next level, and with the latest technology we can provide you with the insights you need to make this happen.</p>
       </div>
+
       <div class="clear"><!-- --></div>
     </article>
   </section>
+
 
   <!-- Content Gray -->
   <section class="container gray">
@@ -99,39 +102,42 @@
 
       <!-- Column Left -->
       <div class="column-left column">
-        <h2>End-to-end services</h2>
-        <p>Outsourcing promotions means freeing resources, allowing you to focus on the things you do best. We can manage your campaign through all of its stages, including:
-        <p><strong>Promotion mechanics</strong> – our experience with brands across a range of industries means we can come up with the best strategy behind customer rewards, making our campaigns both effective and cost-efficient.</p>
-        <p><strong>Point of sale kitting and distribution</strong> – we offer complete point of sale kitting and distribution services including hamper assembly, trade kits and individual kit dispatch.</p>
-        <p><strong>Digital currency/payments</strong> – rewarding customers with the latest digital technology reduces wait times while maintaining the sense of value that cash back rewards are all about.</p>
-        <p><strong>Fulfillment</strong> – from planning right through to your customer receiving their reward, we provide the efficiency that your customers demand.</p>
+        <h2>EFTPOS Cash Back Cards</h2>
+        <p>Branded EFTPOS Cash Back cards are a popular form of loyalty program in Australia, and something that customers continue to perceive as highly valuable.</p>
+        <p>With the best industry strategists available, your gift card loyalty program will be designed to meet your business goals, whether that’s improving the value of your brand or driving sales.</p>
       </div>
+
 
       <!-- Column Right -->
       <div class="column-right column">
-        <img class="alignleft" src="images/cashback-image-2.png" />
+        <img class="alignleft" src="images/loyalty-image-2.png" />
       </div>
 
       <div class="clear"><!-- --></div>
     </article>
   </section>
 
+
   <!-- Content Background Image -->
-  <section class="container image" style="background: transparent url(images/cashback-image-3.jpg) no-repeat center center;">
+  <section class="container image" style="background: transparent url(images/loyalty-image-3.jpg) no-repeat center center;">
     <article class="content">
 
       <!-- Column Left -->
-      <div class="column-left column"><!-- --></div>
+      <div class="column-left column">
+      </div>
+
 
       <!-- Column Right -->
       <div class="column-right column">
-        <h2>Value for you and your customers</h2>
-        <p>We use the best data management technology available, so that you can make the insights necessary to keep your business fresh. Demographics, product performance and even high-value data such as opt-in email addresses can be collected and analysed, taking your marketing strategy to new heights.</p>
-        <p>As well as this, cashback promotions help your brand stand out from the competition, winning new customers and immediate sales through the added value that you can promise.</p>
+        <h2>Competitions, sweepstakes and games</h2>
+        <p>Engaging your audience through competitions, sweepstakes and games gives you the opportunity to get people talking – as well as capturing some of the most valuable forms for data.</p>
+        <p>Our campaigns are designed to create the highest impact while remaining cost efficient. Incentivizing customers with life changing rewards offers maximum engagement, with costs far below those of other marketing strategies.</p>
       </div>
+
       <div class="clear"><!-- --></div>
     </article>
   </section>
+
 
   <!-- Contact Us -->
   <section id="contact-us-container">
@@ -146,7 +152,9 @@
           <textarea placeholder="Message"></textarea>
           <input type="submit" value="Submit" />
         </div>
+
       </div>
+
       <!-- Right -->
       <div class="right">
         <p>Contact Cashback.com.au today to find out how cashback and loyalty programs can help you grow your business.</p>
@@ -155,9 +163,11 @@
         <p><%= @address[:line_3] %></p>
         <p>Phone: <strong><%= @phone_display %></strong></p>
       </div>
+
       <div class="clear"><!-- --></div>
     </article>
   </section>
+
 
   <!-- Footer -->
   <section id="footer-container">
@@ -166,6 +176,7 @@
       <a id="footer-logo" href="<%= @home_page %>">
         <img class="<%= @logo_class %>" src="<%= @logo %>" />
       </a>
+
       <div class="clear"><!-- --></div>
 
       <!-- Footer Menu -->
@@ -175,9 +186,9 @@
           <li class="current-menu-parent">
             <a href="<%= cashback_promotions_path %>">Solutions</a>
             <ul>
-              <li class="current-menu-item"><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
+              <li><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
               <li><a href="<%= cashback_payments_and_distribution_path %>">Cashback Payments and Distribution</a></li>
-              <li><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
+              <li class="current-menu-item"><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
               <li><a href="competitions-sweepstakes-and-games.html">Competitions, Sweepstakes and Games</a></li>
               <li><a href="promotion-management.html">Promotion Management</a></li>
               <li><a href="gift-with-purchase.html">Gift With Purchase</a></li>
@@ -199,6 +210,8 @@
       <div id="credits">
         <a href="http://mc3.com.au/" target="_blank">MC3 Design</a>
       </div>
+
       <div class="clear"><!-- --></div>
-  </footer>
-</section>
+    </footer>
+  </section>
+</div>
