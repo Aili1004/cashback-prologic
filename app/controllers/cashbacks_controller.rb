@@ -4,4 +4,7 @@ class CashbacksController < ApplicationController
 
   def promotions
   end
+
+  def cashback_payments_and_distribution
+  end
 end

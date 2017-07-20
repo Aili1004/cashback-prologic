@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/nz', to: 'cashbacks#home'
 
   get '/cashback_promotions', to: 'cashbacks#promotions'
+  get '/cashback_payments_and_distribution', to: 'cashbacks#cashback_payments_and_distribution'
 end
