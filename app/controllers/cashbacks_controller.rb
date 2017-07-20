@@ -13,4 +13,7 @@ class CashbacksController < ApplicationController
 
   def competitions_sweepstakes_and_games
   end
+
+  def promotion_management
+  end
 end

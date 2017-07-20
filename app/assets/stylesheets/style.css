@@ -337,7 +337,7 @@ input[type="submit"] {-webkit-appearance: none;}
 .container {padding:0 15px; position:relative; overflow-x:hidden;}
 .container.gray {background-color:#edebe2; color:#4f4f4f;}
 .container.image {background-size:cover !important; color:#ffffff; background-attachment:fixed !important;}
-.container.gradient {background:#ffffff url(images/promotion-gradient.png) repeat-x left top;}
+.container.gradient {background:#ffffff url(../images/promotion-gradient.png) repeat-x left top;}
 
 .content {max-width:1230px; margin:0 auto; padding:60px 0 60px 0;}
 .content.no-padding {padding-bottom:0;}
