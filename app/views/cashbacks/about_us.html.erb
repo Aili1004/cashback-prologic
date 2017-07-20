@@ -1,24 +1,27 @@
 <!-- Header -->
 <section id="header-container">
   <header id="header">
+
     <!-- Logo -->
     <a id="logo" href="<%= @home_page %>">
       <img class="<%= @logo_class %>" src="<%= @logo %>" />
     </a>
+
 
     <!-- Phone -->
     <a id="phone" href="<%= @phone %>"><i class="fa fa-phone"></i>
       <%= @phone_display %>
     </a>
 
+
     <!-- Menu -->
     <nav id="nav">
       <ul id="menu">
         <li><a href="<%= @home_page %>">Home</a></li>
-        <li class="current-menu-parent">
+        <li>
           <a href="<%= cashback_promotions_path %>">Solutions</a>
           <ul>
-            <li class="current-menu-item"><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
+              <li><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
             <li><a href="<%= cashback_payments_and_distribution_path %>">Cashback Payments and Distribution</a></li>
             <li><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
             <li><a href="<%= competitions_sweepstakes_and_games_path %>">Competitions, Sweepstakes and Games</a></li>
@@ -27,10 +30,11 @@
             <li><a href="<%= eftpos_cash_back_cards_path %>">EFTPOS Cash Back Cards</a></li>
           </ul>
         </li>
-        <li><a href="<%= about_us_path %>">About us</a></li>
+        <li class="current-menu-item"><a href="<%= about_us_path %>">About us</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
 
     <!-- Menu Button -->
     <a id="menu-button" href="#">
@@ -42,14 +46,15 @@
       </span>
     </a>
 
+
     <!-- Mobile Menu -->
     <nav id="mobile-nav">
       <ul id="mobile-menu">
         <li><a href="<%= @home_page %>">Home</a></li>
-        <li class="current-menu-parent">
+        <li>
           <a href="<%= cashback_promotions_path %>">Solutions</a>
           <ul>
-            <li class="current-menu-item"><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
+            <li><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
             <li><a href="<%= cashback_payments_and_distribution_path %>">Cashback Payments and Distribution</a></li>
             <li><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
             <li><a href="<%= competitions_sweepstakes_and_games_path %>">Competitions, Sweepstakes and Games</a></li>
@@ -58,7 +63,7 @@
             <li><a href="<%= eftpos_cash_back_cards_path %>">EFTPOS Cash Back Cards</a></li>
           </ul>
         </li>
-        <li><a href="<%= about_us_path %>">About us</a></li>
+        <li class="current-menu-item"><a href="<%= about_us_path %>">About us</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="clear"><!-- --></div>
@@ -66,78 +71,55 @@
   </header>
 </section>
 
+
 <!-- Page Banner -->
-<section id="page-banner-container" style="background: transparent url(images/cashback-banner.jpg) no-repeat center center;">
+<section id="page-banner-container" class="fixed-bg" style="background: transparent url(images/about-banner.jpg) no-repeat center center;">
   <article id="page-banner">
-    <h1>Cashback Promotions</h1>
-    <h2>Giving your customers the rewards they deserve</h2>
+    <h1>Australia and New Zealand’s cashback promotion specialists</h1>
+
+    <!-- Center -->
+    <div class="center">
+      <p>Since 2004, Cashback.com.au has led the way in cashback and loyalty program marketing in Australia and New Zealand, providing fun and rewarding experiences for consumers while helping drive growth for our clients.</p>
+      <p>In this time, we have run campaigns for some of the world’s most visible brands, helping them to:</p>
+      <ul>
+        <li>Boost profits</li>
+        <li>Gain market share</li>
+        <li>Raise product awareness and brand visibility</li>
+        <li>Increase sales</li>
+      </ul>
+    </div>
+
+    <!-- Clients -->
+    <div class="clients">
+      <img src="images/canon-logo-white.jpg" />
+      <img src="images/nikon-logo-white.jpg" />
+      <img src="images/garmin-logo-white.jpg" />
+      <img src="images/adobe-logo-white.jpg" />
+      <img src="images/makita-logo-white.jpg" />
+      <img src="images/imation-logo-white.jpg" />
+      <img src="images/fujifilm-logo-white.jpg" />
+      <img src="images/netgear-logo-white.jpg" />
+    </div>
+
+    <!-- Center -->
+    <div class="center">
+      <p>By providing end-to-end solutions, we can also offer a cost-effective way to expand your marketing activity. Using our years of experience and detailed sector knowledge, we have all the tools required to make sure delivery is as smooth as possible.</p>
+      <p>Cashback.com.au is a division of Pro-Logic International, a promotional management company operating across Australia and New Zealand.</p>
+    </div>
   </article>
 </section>
 
+
 <!-- Wrapper -->
 <div id="wrapper">
-  <!-- Content -->
-  <section class="container">
-    <article class="content zero-padding">
-      <!-- Column Left -->
-      <div class="column-left column">
-        <p>At Cashback.com.au, we manage consumer promotions from the planning stages right through to payment and dispatch. Our campaigns are tailor-made to your business and your customer’s needs, emphasising value for money while helping improve customer retention and sales.</p>
-        <p>As industry leaders we understand that in order to be successful we have to contribute to your bottom line. Our experience and industry knowledge means that our services are used by some of the world’s most powerful brands.</p>
-      </div>
-
-      <!-- Column Right -->
-      <div class="column-right column">
-        <img class="alignleft" src="images/cashback-image-1.png" />
-      </div>
-      <div class="clear"><!-- --></div>
-    </article>
-  </section>
-
-  <!-- Content Gray -->
-  <section class="container gray">
-    <article class="content">
-
-      <!-- Column Left -->
-      <div class="column-left column">
-        <h2>End-to-end services</h2>
-        <p>Outsourcing promotions means freeing resources, allowing you to focus on the things you do best. We can manage your campaign through all of its stages, including:
-        <p><strong>Promotion mechanics</strong> – our experience with brands across a range of industries means we can come up with the best strategy behind customer rewards, making our campaigns both effective and cost-efficient.</p>
-        <p><strong>Point of sale kitting and distribution</strong> – we offer complete point of sale kitting and distribution services including hamper assembly, trade kits and individual kit dispatch.</p>
-        <p><strong>Digital currency/payments</strong> – rewarding customers with the latest digital technology reduces wait times while maintaining the sense of value that cash back rewards are all about.</p>
-        <p><strong>Fulfillment</strong> – from planning right through to your customer receiving their reward, we provide the efficiency that your customers demand.</p>
-      </div>
-
-      <!-- Column Right -->
-      <div class="column-right column">
-        <img class="alignleft" src="images/cashback-image-2.png" />
-      </div>
-
-      <div class="clear"><!-- --></div>
-    </article>
-  </section>
-
-  <!-- Content Background Image -->
-  <section class="container image" style="background: transparent url(images/cashback-image-3.jpg) no-repeat center center;">
-    <article class="content">
-
-      <!-- Column Left -->
-      <div class="column-left column"><!-- --></div>
-
-      <!-- Column Right -->
-      <div class="column-right column">
-        <h2>Value for you and your customers</h2>
-        <p>We use the best data management technology available, so that you can make the insights necessary to keep your business fresh. Demographics, product performance and even high-value data such as opt-in email addresses can be collected and analysed, taking your marketing strategy to new heights.</p>
-        <p>As well as this, cashback promotions help your brand stand out from the competition, winning new customers and immediate sales through the added value that you can promise.</p>
-      </div>
-      <div class="clear"><!-- --></div>
-    </article>
-  </section>
 
   <!-- Contact Us -->
-  <section id="contact-us-container">
+  <section id="contact-us-container" class="no-image">
     <article id="contact-us">
+
       <!-- Left -->
       <div class="left">
+
         <!-- Contact Form -->
         <div id="contact-form">
           <label>Contact Us</label>
@@ -147,6 +129,7 @@
           <input type="submit" value="Submit" />
         </div>
       </div>
+
       <!-- Right -->
       <div class="right">
         <p>Contact Cashback.com.au today to find out how cashback and loyalty programs can help you grow your business.</p>
@@ -155,27 +138,31 @@
         <p><%= @address[:line_3] %></p>
         <p>Phone: <strong><%= @phone_display %></strong></p>
       </div>
+
       <div class="clear"><!-- --></div>
     </article>
   </section>
 
+
   <!-- Footer -->
   <section id="footer-container">
     <footer id="footer">
+
       <!-- Footer Logo -->
       <a id="footer-logo" href="<%= @home_page %>">
         <img class="<%= @logo_class %>" src="<%= @logo %>" />
       </a>
+
       <div class="clear"><!-- --></div>
 
       <!-- Footer Menu -->
       <nav id="footer-nav">
         <ul id="footer-menu">
           <li><a href="<%= @home_page %>">Home</a></li>
-          <li class="current-menu-parent">
+          <li>
             <a href="<%= cashback_promotions_path %>">Solutions</a>
             <ul>
-              <li class="current-menu-item"><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
+              <li><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
               <li><a href="<%= cashback_payments_and_distribution_path %>">Cashback Payments and Distribution</a></li>
               <li><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
               <li><a href="<%= competitions_sweepstakes_and_games_path %>">Competitions, Sweepstakes and Games</a></li>
@@ -184,21 +171,25 @@
               <li><a href="<%= eftpos_cash_back_cards_path %>">EFTPOS Cash Back Cards</a></li>
             </ul>
           </li>
-          <li><a href="<%= about_us_path %>">About us</a></li>
+          <li class="current-menu-item"><a href="<%= about_us_path %>">About us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="clear"><!-- --></div>
       </nav>
+
 
       <!-- Copyright -->
       <div id="copyright">
         <p>Cashback and MYcashback  - Copyright &copy; 2017</p>
       </div>
 
+
       <!-- Credits -->
       <div id="credits">
         <a href="http://mc3.com.au/" target="_blank">MC3 Design</a>
       </div>
+
       <div class="clear"><!-- --></div>
-  </footer>
-</section>
+    </footer>
+  </section>
+</div>

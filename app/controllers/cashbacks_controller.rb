@@ -22,4 +22,7 @@ class CashbacksController < ApplicationController
 
   def eftpos_cash_back_cards
   end
+
+  def about_us
+  end
 end

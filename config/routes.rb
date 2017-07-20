@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   get '/promotion_management', to: 'cashbacks#promotion_management'
   get '/gift_with_purchase', to: 'cashbacks#gift_with_purchase'
   get '/eftpos_cash_back_cards', to: 'cashbacks#eftpos_cash_back_cards'
+  get '/about_us', to: 'cashbacks#about_us'
 end
