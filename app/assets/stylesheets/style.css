@@ -254,7 +254,7 @@ input[type="submit"] {-webkit-appearance: none;}
 #contact-us-container.no-image #contact-us label {color:#494949;}
 
 
-#contact-us-container.contact-page {background: transparent url(images/contact-page-bg.jpg) no-repeat center center; background-size:cover; background-attachment:fixed;}
+#contact-us-container.contact-page {background: transparent url(../images/contact-page-bg.jpg) no-repeat center center; background-size:cover; background-attachment:fixed;}
 #contact-us-container.contact-page #contact-us label {display:none !important;}
 #contact-us-container.contact-page .center {max-width:954px; margin:0 auto; text-align:center; padding:160px 0 108px 0; font-family:MetropolisLight;}
 #contact-us-container.contact-page h2 {font-weight:normal; font-family:MetropolisLight; font-size:61px; line-height:70px; padding-bottom:14px;}

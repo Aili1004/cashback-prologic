@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   get '/gift_with_purchase', to: 'cashbacks#gift_with_purchase'
   get '/eftpos_cash_back_cards', to: 'cashbacks#eftpos_cash_back_cards'
   get '/about_us', to: 'cashbacks#about_us'
+  get '/contact', to: 'cashbacks#contact'
 end
