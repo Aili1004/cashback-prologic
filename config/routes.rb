@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get '/loyalty_programs', to: 'cashbacks#loyalty_programs'
   get '/competitions_sweepstakes_and_games', to: 'cashbacks#competitions_sweepstakes_and_games'
   get '/promotion_management', to: 'cashbacks#promotion_management'
+  get '/gift_with_purchase', to: 'cashbacks#gift_with_purchase'
 end

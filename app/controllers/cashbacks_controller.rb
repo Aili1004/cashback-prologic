@@ -16,4 +16,7 @@ class CashbacksController < ApplicationController
 
   def promotion_management
   end
+
+  def gift_with_purchase
+  end
 end
