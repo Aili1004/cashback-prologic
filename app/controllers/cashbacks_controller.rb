@@ -10,4 +10,7 @@ class CashbacksController < ApplicationController
 
   def loyalty_programs
   end
+
+  def competitions_sweepstakes_and_games
+  end
 end

@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get '/cashback_promotions', to: 'cashbacks#promotions'
   get '/cashback_payments_and_distribution', to: 'cashbacks#cashback_payments_and_distribution'
   get '/loyalty_programs', to: 'cashbacks#loyalty_programs'
+  get '/competitions_sweepstakes_and_games', to: 'cashbacks#competitions_sweepstakes_and_games'
 end
