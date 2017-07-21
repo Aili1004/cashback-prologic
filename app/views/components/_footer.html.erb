@@ -1,0 +1,42 @@
+<section id="footer-container">
+  <footer id="footer">
+    <a id="footer-logo" href="<%= @home_page %>">
+      <img class="<%= @logo_class %>" src="<%= @logo %>" />
+    </a>
+    <div class="clear"></div>
+
+    <!-- Footer Menu -->
+    <nav id="footer-nav">
+      <ul id="footer-menu">
+        <li class="<%= footer_home_class %>"><a href="<%= @home_page %>">Home</a></li>
+        <li class="<%= current_footer_parent %>">
+          <a href="<%= cashback_promotions_path %>">Solutions</a>
+          <ul>
+            <li class="<%= footer_cashback_promotions_class %>"><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
+            <li class="<%= footer_cashback_payments_and_distribution_class %>"><a href="<%= cashback_payments_and_distribution_path %>">Cashback Payments and Distribution</a></li>
+            <li class="<%= footer_loyalty_programs_class %>"><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
+            <li class="<%= footer_competitions_sweepstakes_and_games_class %>"><a href="<%= competitions_sweepstakes_and_games_path %>">Competitions, Sweepstakes and Games</a></li>
+            <li class="<%= footer_promotion_management_class %>"><a href="<%= promotion_management_path %>">Promotion Management</a></li>
+            <li class="<%= footer_gift_with_purchase_class %>" ><a href="<%= gift_with_purchase_path %>">Gift With Purchase</a></li>
+            <li class="<%= footer_eftpos_cash_back_cards_class %>"><a href="<%= eftpos_cash_back_cards_path %>">EFTPOS Cash Back Cards</a></li>
+          </ul>
+        </li>
+        <li class="<%= footer_about_us_class %>"><a href="<%= about_us_path %>">About us</a></li>
+        <li class="<%= footer_contact_class %>"><a href="<%= contact_path %>">Contact</a></li>
+      </ul>
+      <div class="clear"></div>
+    </nav>
+
+    <!-- Copyright -->
+    <div id="copyright">
+      <p>Cashback and MYcashback  - Copyright &copy; 2017</p>
+    </div>
+
+    <!-- Credits -->
+    <div id="credits">
+      <a href="http://mc3.com.au/" target="_blank">MC3 Design</a>
+    </div>
+
+    <div class="clear"></div>
+  </footer>
+</section>
