@@ -28,4 +28,9 @@ class CashbacksController < ApplicationController
 
   def contact
   end
+
+  def contact_us
+    ContactMailer.contact_cashback(params[:name], params[:email], params[:message]).deliver
+    redirect_to @home_page
+  end
 end

@@ -163,35 +163,7 @@
 
 
   <!-- Contact Us -->
-  <section id="contact-us-container">
-    <article id="contact-us">
-
-      <!-- Left -->
-      <div class="left">
-
-        <!-- Contact Form -->
-        <div id="contact-form">
-          <label>Contact Us</label>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
-          <input type="submit" value="Submit" />
-        </div>
-      </div>
-
-      <!-- Right -->
-      <div class="right">
-        <p>Contact Cashback.com.au today to find out how cashback and loyalty programs can help you grow your business.</p>
-        <p><%= @address[:line_1] %></p>
-        <p><%= @address[:line_2] %></p>
-        <p><%= @address[:line_3] %></p>
-        <p>Phone: <strong><%= @phone_display %></strong></p>
-      </div>
-
-      <div class="clear"><!-- --></div>
-    </article>
-  </section>
-
+  <%= render partial: "components/contact_us" %>
 
   <!-- Footer -->
   <section id="footer-container">

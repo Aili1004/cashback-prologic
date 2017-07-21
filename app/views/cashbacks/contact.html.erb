@@ -76,85 +76,52 @@
 <div id="wrapper">
 
   <!-- Contact Us -->
-  <section id="contact-us-container" class="contact-page">
-      <article id="contact-us">
+  <%= render partial: "components/contact_contact_us" %>
 
-        <!-- Center -->
-        <div class="center">
-          <h2>Contact</h2>
-          <p>Contact Cashback.com.au today to find out how cashback and loyalty programs can help you grow your business.</p>
-        </div>
+  <!-- Footer -->
+  <section id="footer-container">
+    <footer id="footer">
 
+      <!-- Footer Logo -->
+      <a id="footer-logo" href="<%= @home_page %>">
+        <img class="<%= @logo_class %>" src="<%= @logo %>" />
+      </a>
 
-        <!-- Left -->
-        <div class="left">
+      <div class="clear"><!-- --></div>
 
-          <!-- Contact Form -->
-          <div id="contact-form">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Message"></textarea>
-            <input type="submit" value="Submit" />
-          </div>
-        </div>
-
-        <!-- Right -->
-        <div class="right">
-          <p><%= @address[:line_1] %></p>
-          <p><%= @address[:line_2] %></p>
-          <p><%= @address[:line_3] %></p>
-          <p>Phone: <strong><%= @phone_display %></strong></p>
-        </div>
-
+      <!-- Footer Menu -->
+      <nav id="footer-nav">
+        <ul id="footer-menu">
+          <li><a href="<%= @home_page %>">Home</a></li>
+          <li>
+            <a href="<%= cashback_promotions_path %>">Solutions</a>
+            <ul>
+              <li><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
+              <li><a href="<%= cashback_payments_and_distribution_path %>">Cashback Payments and Distribution</a></li>
+              <li><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
+              <li><a href="<%= competitions_sweepstakes_and_games_path %>">Competitions, Sweepstakes and Games</a></li>
+              <li><a href="<%= promotion_management_path %>">Promotion Management</a></li>
+              <li><a href="<%= gift_with_purchase_path %>">Gift With Purchase</a></li>
+              <li><a href="<%= eftpos_cash_back_cards_path %>">EFTPOS Cash Back Cards</a></li>
+            </ul>
+          </li>
+          <li><a href="<%= about_us_path %>">About us</a></li>
+          <li class="current-menu-item"><a href="<%= contact_path %>">Contact</a></li>
+        </ul>
         <div class="clear"><!-- --></div>
-      </article>
-    </section>
+      </nav>
 
+      <!-- Copyright -->
+      <div id="copyright">
+        <p>Cashback and MYcashback  - Copyright &copy; 2017</p>
+      </div>
 
-    <!-- Footer -->
-    <section id="footer-container">
-      <footer id="footer">
+      <!-- Credits -->
+      <div id="credits">
+        <a href="http://mc3.com.au/" target="_blank">MC3 Design</a>
+      </div>
 
-        <!-- Footer Logo -->
-        <a id="footer-logo" href="<%= @home_page %>">
-          <img class="<%= @logo_class %>" src="<%= @logo %>" />
-        </a>
-
-        <div class="clear"><!-- --></div>
-
-        <!-- Footer Menu -->
-        <nav id="footer-nav">
-          <ul id="footer-menu">
-            <li><a href="<%= @home_page %>">Home</a></li>
-            <li>
-              <a href="<%= cashback_promotions_path %>">Solutions</a>
-              <ul>
-                <li><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></li>
-                <li><a href="<%= cashback_payments_and_distribution_path %>">Cashback Payments and Distribution</a></li>
-                <li><a href="<%= loyalty_programs_path %>">Loyalty Programs</a></li>
-                <li><a href="<%= competitions_sweepstakes_and_games_path %>">Competitions, Sweepstakes and Games</a></li>
-                <li><a href="<%= promotion_management_path %>">Promotion Management</a></li>
-                <li><a href="<%= gift_with_purchase_path %>">Gift With Purchase</a></li>
-                <li><a href="<%= eftpos_cash_back_cards_path %>">EFTPOS Cash Back Cards</a></li>
-              </ul>
-            </li>
-            <li><a href="<%= about_us_path %>">About us</a></li>
-            <li class="current-menu-item"><a href="<%= contact_path %>">Contact</a></li>
-          </ul>
-          <div class="clear"><!-- --></div>
-        </nav>
-
-        <!-- Copyright -->
-        <div id="copyright">
-          <p>Cashback and MYcashback  - Copyright &copy; 2017</p>
-        </div>
-
-        <!-- Credits -->
-        <div id="credits">
-          <a href="http://mc3.com.au/" target="_blank">MC3 Design</a>
-        </div>
-
-        <div class="clear"><!-- --></div>
-      </footer>
-    </section>
-  </div>
+      <div class="clear"><!-- --></div>
+    </footer>
+  </section>
+</div>

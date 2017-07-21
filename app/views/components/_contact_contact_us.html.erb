@@ -1,0 +1,36 @@
+<section id="contact-us-container" class="contact-page">
+    <article id="contact-us">
+
+      <!-- Center -->
+      <div class="center">
+        <h2>Contact</h2>
+        <p>Contact Cashback.com.au today to find out how cashback and loyalty programs can help you grow your business.</p>
+      </div>
+
+
+      <!-- Left -->
+      <div class="left">
+
+        <!-- Contact Form -->
+        <div id="contact-form">
+          <%= form_tag('/contact_us', method: :post) do %>
+            <label>Contact Us</label>
+            <%= text_field_tag "name", "", :placeholder => "Name" %>
+            <%= text_field_tag "email", "", :placeholder => "Email" %>
+            <%= text_area_tag "message", "", :placeholder => "Message" %>
+            <input type="submit" value="Submit" />
+          <% end %>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="right">
+        <p><%= @address[:line_1] %></p>
+        <p><%= @address[:line_2] %></p>
+        <p><%= @address[:line_3] %></p>
+        <p>Phone: <strong><%= @phone_display %></strong></p>
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
