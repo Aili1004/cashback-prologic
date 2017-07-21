@@ -21,7 +21,11 @@
             <li class="<%= menu_competitions_sweepstakes_and_games_class %>"><a href="<%= competitions_sweepstakes_and_games_path %>">Competitions, Sweepstakes and Games</a></li>
             <li class="<%= menu_promotion_management_class %>"><a href="<%= promotion_management_path %>">Promotion Management</a></li>
             <li class="<%= menu_gift_with_purchase_class %>" ><a href="<%= gift_with_purchase_path %>">Gift With Purchase</a></li>
-            <li class="<%= menu_eftpos_cash_back_cards_class %>"><a href="<%= eftpos_cash_back_cards_path %>">EFTPOS Cash Back Cards</a></li>
+
+            <!-- TODO: modify below url -->
+            <% unless @base_url.include?("nz") %>
+              <li class="<%= menu_eftpos_cash_back_cards_class %>"><a href="<%= eftpos_cash_back_cards_path %>">EFTPOS Cash Back Cards</a></li>
+            <% end %>
           </ul>
         </li>
         <li class="<%= menu_about_us_class %>"><a href="<%= about_us_path %>">About us</a></li>
