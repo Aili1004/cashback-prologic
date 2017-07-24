@@ -1,4 +1,6 @@
 class CashbacksController < ApplicationController
+  layout "cashbacks"
+
   def home
   end
 
