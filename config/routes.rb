@@ -15,5 +15,8 @@ Rails.application.routes.draw do
   get '/eftpos_cash_back_cards', to: 'cashbacks#eftpos_cash_back_cards'
   get '/about_us', to: 'cashbacks#about_us'
   get '/contact', to: 'cashbacks#contact'
-  post '/contact_us', to: 'cashbacks#contact_us'
+  post '/contact_cashback', to: 'cashbacks#contact_cashback'
+
+  get '/prologic', to: 'prologic#home'
+  post '/contact_prologic', to: 'prologic#contact_prologic'
 end

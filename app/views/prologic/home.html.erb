@@ -1,0 +1,205 @@
+<section id="header-container">
+  <header id="header">
+    <a id="logo" href="<%= prologic_path %>">
+      <img src="pro-logic/images/logo.png" />
+    </a>
+    <a id="phone" href="tel:61242979797"><i class="fa fa-phone"></i> +61 2 4297 9797</a>
+
+    <!-- Menu -->
+    <nav id="nav">
+      <ul id="menu">
+        <li><a href="#banner-container">Home</a></li>
+        <li><a href="#about-container">About</a></li>
+        <li><a href="#services-container">Services</a></li>
+        <li><a href="#cashback">Cashback</a></li>
+        <li><a href="#loyalty">Loyalty Programs</a></li>
+        <li><a href="#competitions">Competitions</a></li>
+        <li><a href="#contact-us-container">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu Button -->
+    <a id="menu-button" href="#">
+      <span class="lines">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </span>
+    </a>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-nav">
+      <ul id="mobile-menu">
+        <li><a href="#banner-container">Home</a></li>
+        <li><a href="#about-container">About</a></li>
+        <li><a href="#services-container">Services</a></li>
+        <li><a href="#cashback">Cashback</a></li>
+        <li><a href="#loyalty">Loyalty Programs</a></li>
+        <li><a href="#competitions">Competitions</a></li>
+        <li><a href="#contact-us-container">Contact</a></li>
+      </ul>
+      <div class="clear"></div>
+    </nav>
+  </header>
+</section>
+
+
+<!-- Banner -->
+<section id="banner-container" style="background: transparent url(pro-logic/images/banner.jpg) no-repeat center center;">
+  <article id="banner">
+    <div id="banner-content">
+      <h1>A reward for your customers is a reward for you</h1>
+      <p>Complete client and consumer promotion solutions from Pro-Logic.</p>
+      <a href="#about-container" class="scrollDown">Learn more</a>
+    </div>
+  </article>
+</section>
+
+
+<!-- About -->
+<section id="about-container">
+  <article id="about" class="page-content">
+    <h2><strong>Pro-Logic</strong> - The <strong>Pro</strong> in Promotions, and <strong>Logic</strong> in Logistics</h2>
+    <div class="columns">
+      <div class="column">
+        <h3>A logical step</h3>
+        <p>Our promotion strategies are always designed to give your brand the maximum impact. Whether it's using cashback and gift card campaigns or games and competitions, Pro-Logic can help your business reach the widest possible audience.</p>
+      </div>
+
+      <div class="column">
+        <h3>End-to-end solutions</h3>
+        <p>From planning to execution, we offer an end-to-end service that is both eye-catching and engaging. Meanwhile, our reporting and analysis systems give you complete visibility of each campaign through the entire sales cycle.</p>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+
+    <img src="pro-logic/images/about-image.png" />
+    <div class="columns">
+      <div class="column">
+        <h3>Complete promotion logistics</h3>
+        <p>Our extensive experience and infrastructure allows us to manage a vast number of promotions at both speed and scale. Here's a few benefits of choosing Pro-Logic:</p>
+        <ul>
+          <li>Dedicated promotion management team</li>
+          <li>Full service data entry and call centre teams</li>
+          <li>Warehousing and logistics</li>
+          <li>Online, email and call centre reporting</li>
+          <li>Multiple currency delivery</li>
+          <li>Superb manufacturer and retailer relationships</li>
+        </ul>
+        <img class="no-margin" src="pro-logic/images/about-image-3.png" />
+      </div>
+
+      <div class="column">
+        <img class="full" src="pro-logic/images/about-image-2.jpg" />
+        <h3>Promotion across Asia Pacific</h3>
+        <p>Serving Australia, New Zealand and Asia and some of the world’s most powerful brands, our campaigns have brought already successful clients to even greater heights.</p>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+  </article>
+</section>
+
+<section id="services-container">
+  <article id="services" class="page-content">
+    <div class="center">
+      <h2>Services</h2>
+      <p>Our services cover the full range of customer promotion strategies, Gift With Purchase and Digital e-Cards, all of which are based on the lastest technology and years of industry expertise.</p>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <h3 id="cashback">Cashback promotions</h3>
+        <p>Cashback programs give your customers the most direct reward possible. See how you can benefit from making consumers feel as if they've received something for nothing.</p>
+      </div>
+      <div class="column">
+        <img class="aligleft" src="pro-logic/images/promotions-image.png" />
+      </div>
+      <div class="column">
+        <img class="alignright" src="pro-logic/images/loyalty-image.png" />
+      </div>
+      <div class="column">
+        <h3 id="loyalty">Loyalty programs</h3>
+        <p>Loyalty programs such as branded gift cards or store rewards keep your customers coming back, while also providing valuable data.</p>
+      </div>
+      <div class="column">
+        <h3 id="competitions">Competitions</h3>
+        <p>Competitions, games and sweepstakes are a fun and cost-effecient way of getting people talking about your brand, particularly across digital channels.</p>
+      </div>
+      <div class="column">
+        <img class="alignleft" src="pro-logic/images/competitions-image.png" />
+      </div>
+
+      <div class="clear"></div>
+    </div>
+
+    <a class="button" href="<%= root_path %>" target="_blank">Find out more</a>
+  </article>
+</section>
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+  <section id="contact-us-container">
+    <article id="contact-us">
+      <div class="left">
+        <div id="contact-form">
+          <%= form_tag('/contact_prologic', method: :post) do %>
+            <label>Contact Us</label>
+            <%= text_field_tag "name", "", :placeholder => "Name" %>
+            <%= text_field_tag "email", "", :placeholder => "Email" %>
+            <%= text_area_tag "message", "", :placeholder => "Message" %>
+            <input type="submit" value="Submit" />
+          <% end %>
+        </div>
+      </div>
+
+      <div class="right">
+        <p>Contact Pro-Logic today to find your perfect promotion solution.</p>
+        <p>Pro-Logic International</p>
+        <p>PO BOX 6331</p>
+        <p>Alexandria, NSW 2015</p>
+        <p>Australia</p>
+        <p>Phone: <strong>+61 2 4297 9797</strong></p>
+      </div>
+      <div class="clear"></div>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer-container">
+    <footer id="footer">
+      <a id="footer-logo" href="#banner-container">
+        <img src="pro-logic/images/footer-logo.png" />
+      </a>
+
+      <div class="clear"></div>
+      <nav id="footer-nav">
+        <ul id="footer-menu">
+          <li><a href="#banner-container">Home</a></li>
+          <li><a href="#about-container">About</a></li>
+          <li><a href="#services-container">Services</a></li>
+          <li><a href="#cashback">Cashback</a></li>
+          <li><a href="#loyalty">Loyalty Programs</a></li>
+          <li><a href="#competitions">Competitions</a></li>
+          <li><a href="#contact-us-container">Contact</a></li>
+        </ul>
+        <div class="clear"></div>
+      </nav>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <p>Cashback and MYcashback  - Copyright &copy; 2017</p>
+      </div>
+
+      <!-- Credits -->
+      <div id="credits">
+        <a href="http://mc3.com.au/" target="_blank">MC3 Design</a>
+      </div>
+
+      <div class="clear"></div>
+    </footer>
+  </section>
+</div>
