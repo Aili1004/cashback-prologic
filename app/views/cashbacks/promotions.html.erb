@@ -1,0 +1,77 @@
+<%= render partial: "components/header", locals: { current_menu_parent: "current-menu-parent", menu_home_class: "", menu_cashback_promotions_class: "current-menu-item", menu_cashback_payments_and_distribution_class: "",
+                                                    menu_loyalty_programs_class: "", menu_competitions_sweepstakes_and_games_class: "", menu_promotion_management_class: "",
+                                                    menu_gift_with_purchase_class: "", menu_eftpos_cash_back_cards_class: "", menu_about_us_class: "", menu_contact_class: ""} %>
+
+<!-- Page Banner -->
+<section id="page-banner-container" style="background: transparent url(images/cashback-banner.jpg) no-repeat center center;">
+  <article id="page-banner">
+    <h1>Cashback Promotions</h1>
+    <h2>Giving your customers the rewards they deserve</h2>
+  </article>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Content -->
+  <section class="container">
+    <article class="content zero-padding">
+      <!-- Column Left -->
+      <div class="column-left column">
+        <p>At <%= @website %>, we manage consumer promotions from the planning stages right through to payment and dispatch. Our campaigns are tailor-made to your business and your customer’s needs, emphasising value for money while helping improve customer retention and sales.</p>
+        <p>As industry leaders we understand that in order to be successful we have to contribute to your bottom line. Our experience and industry knowledge means that our services are used by some of the world’s most powerful brands.</p>
+      </div>
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <img class="alignleft" src="images/cashback-image-1.png" />
+      </div>
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <!-- Content Gray -->
+  <section class="container gray">
+    <article class="content">
+
+      <!-- Column Left -->
+      <div class="column-left column">
+        <h2>End-to-end services</h2>
+        <p>Outsourcing promotions means freeing resources, allowing you to focus on the things you do best. We can manage your campaign through all of its stages, including:
+        <p><strong>Promotion mechanics</strong> – our experience with brands across a range of industries means we can come up with the best strategy behind customer rewards, making our campaigns both effective and cost-efficient.</p>
+        <p><strong>Point of sale kitting and distribution</strong> – we offer complete point of sale kitting and distribution services including hamper assembly, trade kits and individual kit dispatch.</p>
+        <p><strong>Digital currency/payments</strong> – rewarding customers with the latest digital technology reduces wait times while maintaining the sense of value that cash back rewards are all about.</p>
+        <p><strong>Fulfillment</strong> – from planning right through to your customer receiving their reward, we provide the efficiency that your customers demand.</p>
+      </div>
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <img class="alignleft" src="images/cashback-image-2.png" />
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <!-- Content Background Image -->
+  <section class="container image" style="background: transparent url(images/cashback-image-3.jpg) no-repeat center center;">
+    <article class="content">
+
+      <!-- Column Left -->
+      <div class="column-left column"><!-- --></div>
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <h2>Value for you and your customers</h2>
+        <p>We use the best data management technology available, so that you can make the insights necessary to keep your business fresh. Demographics, product performance and even high-value data such as opt-in email addresses can be collected and analysed, taking your marketing strategy to new heights.</p>
+        <p>As well as this, cashback promotions help your brand stand out from the competition, winning new customers and immediate sales through the added value that you can promise.</p>
+      </div>
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <%= render partial: "components/contact_us" %>
+
+  <%= render partial: "components/footer", locals: {current_footer_parent: "current-menu-parent", footer_home_class: "", footer_cashback_promotions_class: "current-menu-item", footer_cashback_payments_and_distribution_class: "",
+                                                      footer_loyalty_programs_class: "", footer_competitions_sweepstakes_and_games_class: "", footer_promotion_management_class: "",
+                                                      footer_gift_with_purchase_class: "", footer_eftpos_cash_back_cards_class: "", footer_about_us_class: "", footer_contact_class: ""} %>
+</div>

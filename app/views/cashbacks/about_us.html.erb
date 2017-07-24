@@ -1,0 +1,49 @@
+<%= render partial: "components/header", locals: { current_menu_parent: "", menu_home_class: "", menu_cashback_promotions_class: "", menu_cashback_payments_and_distribution_class: "",menu_loyalty_programs_class: "",
+                                                    menu_competitions_sweepstakes_and_games_class: "", menu_promotion_management_class: "", menu_gift_with_purchase_class: "",
+                                                    menu_eftpos_cash_back_cards_class: "", menu_about_us_class: "current-menu-item", menu_contact_class: ""} %>
+
+<!-- Page Banner -->
+<section id="page-banner-container" class="fixed-bg" style="background: transparent url(images/about-banner.jpg) no-repeat center center;">
+  <article id="page-banner">
+    <h1>Australia and New Zealand’s cashback promotion specialists</h1>
+
+    <!-- Center -->
+    <div class="center">
+      <p>Since 2004, <%= @website %> has led the way in cashback and loyalty program marketing in Australia and New Zealand, providing fun and rewarding experiences for consumers while helping drive growth for our clients.</p>
+      <p>In this time, we have run campaigns for some of the world’s most visible brands, helping them to:</p>
+      <ul>
+        <li>Boost profits</li>
+        <li>Gain market share</li>
+        <li>Raise product awareness and brand visibility</li>
+        <li>Increase sales</li>
+      </ul>
+    </div>
+
+    <!-- Clients -->
+    <div class="clients">
+      <img src="images/canon-logo-white.jpg" />
+      <img src="images/nikon-logo-white.jpg" />
+      <img src="images/garmin-logo-white.jpg" />
+      <img src="images/adobe-logo-white.jpg" />
+      <img src="images/makita-logo-white.jpg" />
+      <img src="images/imation-logo-white.jpg" />
+      <img src="images/fujifilm-logo-white.jpg" />
+      <img src="images/netgear-logo-white.jpg" />
+    </div>
+
+    <!-- Center -->
+    <div class="center">
+      <p>By providing end-to-end solutions, we can also offer a cost-effective way to expand your marketing activity. Using our years of experience and detailed sector knowledge, we have all the tools required to make sure delivery is as smooth as possible.</p>
+      <p><%= @website %> is a division of Pro-Logic International, a promotional management company operating across Australia and New Zealand.</p>
+    </div>
+  </article>
+</section>
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+  <%= render partial: "components/contact_us" %>
+  <%= render partial: "components/footer", locals: {current_footer_parent: "", footer_home_class: "", footer_cashback_promotions_class: "", footer_cashback_payments_and_distribution_class: "",footer_loyalty_programs_class: "",
+                                                      footer_competitions_sweepstakes_and_games_class: "", footer_promotion_management_class: "", footer_gift_with_purchase_class: "",
+                                                      footer_eftpos_cash_back_cards_class: "", footer_about_us_class: "current-menu-item", footer_contact_class: ""} %>
+</div>

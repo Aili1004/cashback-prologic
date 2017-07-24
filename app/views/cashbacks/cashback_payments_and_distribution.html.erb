@@ -1,0 +1,68 @@
+<%= render partial: "components/header", locals: { current_menu_parent: "current-menu-parent", menu_home_class: "", menu_cashback_promotions_class: "", menu_cashback_payments_and_distribution_class: "current-menu-item", menu_loyalty_programs_class: "",
+                                                    menu_competitions_sweepstakes_and_games_class: "", menu_promotion_management_class: "", menu_gift_with_purchase_class: "",
+                                                    menu_eftpos_cash_back_cards_class: "", menu_about_us_class: "", menu_contact_class: ""} %>
+
+<!-- Page Banner -->
+<section id="page-banner-container" style="background: transparent url(images/currency-banner.jpg) no-repeat center center;">
+  <article id="page-banner">
+    <h1>Cashback payments and distribution</h1>
+    <h2>Using the latest technology to reward your customers</h2>
+  </article>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Content -->
+  <section class="container">
+    <article class="content no-padding">
+      <!-- Column Left -->
+      <div class="column-left column">
+        <img class="alignright" src="images/currency-image-1.png" />
+      </div>
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <h2>EFT, Branded Eftpos Cards and even Cheques</h2>
+        <p>EFT, branded cards and cheques are all essential tools when it comes to loyalty reward campaigns. We can manage and deliver all of these reward types, including processing and dispatch.</p>
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <!-- Content Gray -->
+  <section class="container gray">
+    <article class="content">
+      <!-- Column Left -->
+      <div class="column-left column">
+        <h2>SMART Phone digital payments</h2>
+        <p>We have just launched digital store cards with over 40 national retailers to choose from.</p>
+        <p>As well as the traditional means of rewards and validation, is staying ahead of the curve and providing digital payment methods as an alternative to the production and delivery of cheques and gift cards. The benefits of digital payment methods include:</p>
+        <ul>
+          <li>Instant delivery</li>
+          <li>Co-branded currency</li>
+          <li>Strong retail partnerships</li>
+          <li>Eliminate “lost in the mail” or physical delays</li>
+          <li>No difficult customer activation process</li>
+          <li>Can create any retailer partners digital program</li>
+        </ul>
+        <p>Digital currency is versatile and can be used for both competition rewards and all forms of promotional rebate.</p>
+        <p>A recent example was one of our well known camera clients. They provided a Hoyts e-card to every customer who completed their online training document. The customer not only learn’t how to use their new camera they were rewarded with a gift for doing so. All online and fully automated.</p>
+      </div>
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <img class="alignleft" src="images/currency-image-2.png" />
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <%= render partial: "components/contact_us" %>
+
+  <%= render partial: "components/footer", locals: {current_footer_parent: "current-menu-parent", footer_home_class: "", footer_cashback_promotions_class: "", footer_cashback_payments_and_distribution_class: "current-menu-item",
+                                                      footer_loyalty_programs_class: "", footer_competitions_sweepstakes_and_games_class: "", footer_promotion_management_class: "",
+                                                      footer_gift_with_purchase_class: "", footer_eftpos_cash_back_cards_class: "", footer_about_us_class: "", footer_contact_class: ""} %>
+
+</div>

@@ -1,0 +1,81 @@
+<%= render partial: "components/header", locals: { current_menu_parent: "current-menu-parent", menu_home_class: "", menu_cashback_promotions_class: "", menu_cashback_payments_and_distribution_class: "",
+                                                    menu_loyalty_programs_class: "current-menu-item", menu_competitions_sweepstakes_and_games_class: "", menu_promotion_management_class: "",
+                                                    menu_gift_with_purchase_class: "", menu_eftpos_cash_back_cards_class: "", menu_about_us_class: "", menu_contact_class: ""} %>
+
+<!-- Page Banner -->
+<section id="page-banner-container" style="background: transparent url(images/loyalty-banner.jpg) no-repeat center center;">
+    <article id="page-banner">
+        <h1>Loyalty Programs</h1>
+        <h2>Strengthening customer engagement and increasing sales</h2>
+    </article>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Content -->
+  <section class="container">
+    <article class="content">
+      <!-- Column Left -->
+      <div class="column-left column">
+        <img src="images/loyalty-image-1.jpg" />
+      </div>
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <p>Consumer loyalty programs offer one of the most cost-effective means of engagement and promotion. By maximising retention as well as drawing in customers from competitors, this is a marketing strategy that can cost little and generate exceptional rewards.</p>
+        <p>Devices such as EFTPOS Cash Back cards in particular add value to your brand and bottom line by increasing visibility and customer engagement – but it’s not just about sales. Leveraging customer data can be what takes your business to the next level, and with the latest technology we can provide you with the insights you need to make this happen.</p>
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+
+  <!-- Content Gray -->
+  <section class="container gray">
+    <article class="content">
+
+      <!-- Column Left -->
+      <div class="column-left column">
+        <h2>EFTPOS Cash Back Cards</h2>
+        <p>Branded EFTPOS Cash Back cards are a popular form of loyalty program in Australia, and something that customers continue to perceive as highly valuable.</p>
+        <p>With the best industry strategists available, your gift card loyalty program will be designed to meet your business goals, whether that’s improving the value of your brand or driving sales.</p>
+      </div>
+
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <img class="alignleft" src="images/loyalty-image-2.png" />
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+
+  <!-- Content Background Image -->
+  <section class="container image" style="background: transparent url(images/loyalty-image-3.jpg) no-repeat center center;">
+    <article class="content">
+
+      <!-- Column Left -->
+      <div class="column-left column">
+      </div>
+
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <h2>Competitions, sweepstakes and games</h2>
+        <p>Engaging your audience through competitions, sweepstakes and games gives you the opportunity to get people talking – as well as capturing some of the most valuable forms for data.</p>
+        <p>Our campaigns are designed to create the highest impact while remaining cost efficient. Incentivizing customers with life changing rewards offers maximum engagement, with costs far below those of other marketing strategies.</p>
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <%= render partial: "components/contact_us" %>
+
+  <%= render partial: "components/footer", locals: {current_footer_parent: "current-menu-parent", footer_home_class: "", footer_cashback_promotions_class: "", footer_cashback_payments_and_distribution_class: "",
+                                                      footer_loyalty_programs_class: "current-menu-item", footer_competitions_sweepstakes_and_games_class: "", footer_promotion_management_class: "",
+                                                      footer_gift_with_purchase_class: "", footer_eftpos_cash_back_cards_class: "", footer_about_us_class: "", footer_contact_class: ""} %>
+</div>

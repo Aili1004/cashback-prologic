@@ -1,0 +1,89 @@
+<%= render partial: "components/header", locals: { current_menu_parent: "current-menu-parent", menu_home_class: "", menu_cashback_promotions_class: "", menu_cashback_payments_and_distribution_class: "", menu_loyalty_programs_class: "",
+                                                    menu_competitions_sweepstakes_and_games_class: "current-menu-item", menu_promotion_management_class: "", menu_gift_with_purchase_class: "",
+                                                    menu_eftpos_cash_back_cards_class: "", menu_about_us_class: "", menu_contact_class: ""} %>
+
+<!-- Page Banner -->
+<section id="page-banner-container" style="background: transparent url(images/competitions-banner.jpg) no-repeat center center;">
+  <article id="page-banner">
+    <h1>Competitions, Sweepstakes and Games</h1>
+    <h2>Efficient and effective consumer engagement</h2>
+  </article>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Content -->
+  <section class="container">
+    <article class="content">
+      <!-- Column Left -->
+      <div class="column-left column">
+        <img src="images/competitions-image-1.jpg" />
+      </div>
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <p>An eye-catching competition, sweepstake or game can be one of the most effective ways of getting people talking about your brand.</p>
+        <p>At the same time, with the right strategy in place it's possible to offer huge rewards to a customer for a tiny fraction of the perceived cost. By intelligently structuring prize pools and distribution, <%= @website %> can deliver standout campaigns without an excessive spend.</p>
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <!-- Content Gray -->
+  <section class="container gray">
+      <article class="content">
+          <!-- Column Left -->
+          <div class="column-left column">
+              <h2>High-impact campaigns</h2>
+              <p>There's nothing more exciting than offering customers potentially life changing rewards. With <%= @website %>, you can be guaranteed that you will see the very best return for this investment.</p>
+          </div>
+
+          <!-- Column Right -->
+          <div class="column-right column">
+              <img class="alignleft" src="images/competitions-image-2.png" />
+          </div>
+
+          <div class="clear"><!-- --></div>
+      </article>
+  </section>
+
+  <!-- Content -->
+  <section class="container">
+    <article class="content">
+      <!-- Column Left -->
+      <div class="column-left column">
+        <img class="alignright" src="images/competitions-image-3.png" />
+      </div>
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <h2>Cost-effective promotion</h2>
+        <p>At the same time, with the right strategy in place it’s possible to offer huge rewards to accustomers for a tiny fraction of the perceived cost. By intelligently structuring prize pools and distribution, <%= @website %> can deliver standout campaigns without an excessive spend.</p>
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <!-- Content Background Image -->
+  <section class="container image" style="background: transparent url(images/competitions-image-4.jpg) no-repeat center center;">
+    <article class="content">
+
+      <!-- Center -->
+      <div class="center">
+        <h2>From planning to distribution</h2>
+        <p>Of course, any successful promotion campaign requires both thorough planning and effective delivery. Our end-to-end campaign management approach means you can rely on our expertise while freeing up valuable resources.</p>
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <%= render partial: "components/contact_us" %>
+
+  <%= render partial: "components/footer", locals: {current_footer_parent: "current-menu-parent", footer_home_class: "", footer_cashback_promotions_class: "", footer_cashback_payments_and_distribution_class: "",
+                                                      footer_loyalty_programs_class: "", footer_competitions_sweepstakes_and_games_class: "current-menu-item", footer_promotion_management_class: "",
+                                                      footer_gift_with_purchase_class: "", footer_eftpos_cash_back_cards_class: "", footer_about_us_class: "", footer_contact_class: ""} %>
+
+</div>

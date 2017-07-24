@@ -1,0 +1,24 @@
+<section id="contact-us-container">
+  <article id="contact-us">
+    <div class="left">
+      <div id="contact-form">
+        <%= form_tag('/contact_cashback', method: :post) do %>
+          <label>Contact Us</label>
+          <%= text_field_tag "name", "", :placeholder => "Name" %>
+          <%= text_field_tag "email", "", :placeholder => "Email" %>
+          <%= text_area_tag "message", "", :placeholder => "Message" %>
+          <input type="submit" value="Submit" />
+        <% end %>
+      </div>
+    </div>
+
+    <div class="right">
+      <p>Contact <%= @website %> today to find out how cashback and loyalty programs can help you grow your business.</p>
+      <p><%= @address[:line_1] %></p>
+      <p><%= @address[:line_2] %></p>
+      <p><%= @address[:line_3] %></p>
+      <p>Phone: <strong><%= @phone_display %></strong></p>
+    </div>
+    <div class="clear"></div>
+  </article>
+</section>

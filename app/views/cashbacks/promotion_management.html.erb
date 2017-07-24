@@ -1,0 +1,103 @@
+<%= render partial: "components/header", locals: { current_menu_parent: "current-menu-parent", menu_home_class: "", menu_cashback_promotions_class: "", menu_cashback_payments_and_distribution_class: "",
+                                                    menu_loyalty_programs_class: "", menu_competitions_sweepstakes_and_games_class: "", menu_promotion_management_class: "current-menu-item",
+                                                    menu_gift_with_purchase_class: "", menu_eftpos_cash_back_cards_class: "", menu_about_us_class: "", menu_contact_class: ""} %>
+
+<!-- Page Banner -->
+<section id="page-banner-container" style="background: transparent url(images/promotion-banner.jpg) no-repeat center center;">
+  <article id="page-banner">
+    <h1>Cashback and loyalty promotion management</h1>
+    <h2>From Australia and New Zealand's leading cashback specialists</h2>
+  </article>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Content -->
+  <section class="container">
+    <article class="content">
+      <!-- Center -->
+      <div class="center">
+          <p>We provide end-to-end solutions for cashback and loyalty program promotions. This means we can develop a campaign from start to finish, from creating a strategy tailored to your business right through to warehouse management, prize distribution, EFTPOS Cash Back Card design and fulfillment.</p>
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <!-- Content Background Image -->
+  <section class="container image" style="background: transparent url(images/promotion-image-1.jpg) no-repeat center center;">
+    <article class="content">
+      <!-- Column Left -->
+      <div class="column-left column"><!-- --></div>
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <h2>A full service</h2>
+        <p>By taking advantage of our range of consumer promotion solutions, we can give your internal teams more time to focus on what they do best. We can handle everything from:</p>
+        <ul>
+          <li>Development of promotional logistics</li>
+          <li>Distribution of point of sale material</li>
+          <li>Construction of web-based entry facilities</li>
+          <li>Entry mechanics</li>
+          <li>Email marketing</li>
+          <li>Validation and data entry</li>
+          <li>EFTPOS Cash Back Card, EFT or Cheque processing</li>
+          <li>Reward dispatch</li>
+        </ul>
+        <p>Why not make it easy and contact <%= @website %> today to see how we help you achieve your goals?</p>
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <!-- Content -->
+  <section class="container gradient">
+    <article class="content">
+      <!-- Column Left -->
+      <div class="column-left column">
+        <h2>Data to help you grow</h2>
+        <p><%= @website %> clients are given access to our Claims Management System, offering real time control and viewing of your promotions. You will also be provided with weekly tracking reports, giving you valuable insight into your product and customer buying behaviours.</p>
+        <p>When setting up a promotion you may also want the option of collecting marketing data in order to use for future opportunities. The information we can supply includes:</p>
+        <ul>
+          <li>Customer demographics tracking</li>
+          <li>Claims by locations, name address or store</li>
+          <li>Store or purchase tracking</li>
+          <li>Product analysis</li>
+          <li>Opt-in email addresses</li>
+        </ul>
+      </div>
+
+
+      <!-- Column Right -->
+      <div class="column-right column">
+        <img src="images/promotion-image-3.png" />
+      </div>
+
+      <!-- Absolute Right -->
+      <img class="absolute-right" src="images/promotion-image-4.png" />
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <!-- Content Background Image -->
+  <section class="container image" style="background: transparent url(images/promotion-image-5.jpg) no-repeat center center;">
+    <article class="content">
+      <!-- Center -->
+      <div class="center">
+        <h2>The best results</h2>
+        <p>Choosing a partner can be a difficult task. That’s why we want you to know that you’re in safe hands. As Australia and New Zealand’s leading cashback promotions specialist, we have experience across a wide number of industries and have been trusted by some of the world’s most powerful brands.</p>
+        <p>Contact us today to find out more about how our cashback and loyalty program campaigns can help your business.</p>
+      </div>
+
+      <div class="clear"><!-- --></div>
+    </article>
+  </section>
+
+  <%= render partial: "components/contact_us" %>
+
+  <%= render partial: "components/footer", locals: {current_footer_parent: "current-menu-parent", footer_home_class: "", footer_cashback_promotions_class: "", footer_cashback_payments_and_distribution_class: "",
+                                                      footer_loyalty_programs_class: "", footer_competitions_sweepstakes_and_games_class: "", footer_promotion_management_class: "current-menu-item",
+                                                      footer_gift_with_purchase_class: "", footer_eftpos_cash_back_cards_class: "", footer_about_us_class: "", footer_contact_class: ""} %>
+</div>
