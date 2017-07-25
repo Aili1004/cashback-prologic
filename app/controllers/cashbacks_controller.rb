@@ -32,7 +32,7 @@ class CashbacksController < ApplicationController
   end
 
   def contact_cashback
-    ContactMailer.contact_cashback(params[:name], params[:email], params[:message]).deliver
+    ContactMailer.contact_cashback(params[:name], params[:email], params[:message]).deliver_later
     redirect_to @home_page
   end
 end

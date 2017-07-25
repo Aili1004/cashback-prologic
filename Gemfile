@@ -18,6 +18,10 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
+gem 'sidekiq'
+source 'https://00c36862:c82bca1b@gems.contribsys.com/' do
+  gem 'sidekiq-pro'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
