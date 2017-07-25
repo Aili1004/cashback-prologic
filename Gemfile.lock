@@ -53,6 +53,9 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
+    dotenv (0.6.0)
+    dotenv-rails (0.6.0)
+      dotenv (= 0.6.0)
     erubi (1.6.1)
     execjs (2.7.0)
     ffi (1.9.18)
@@ -174,6 +177,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+  dotenv-rails
   jbuilder (~> 2.5)
   jquery-rails
   letter_opener

@@ -6,6 +6,6 @@ class PrologicController < ApplicationController
 
   def contact_prologic
     ContactMailer.contact_prologic(params[:name], params[:email], params[:message]).deliver_later
-    redirect_to prologic_path
+    redirect_to ENV['PROLOGIC_URL']
   end
 end
