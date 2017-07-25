@@ -1,6 +1,6 @@
 <section id="footer-container">
   <footer id="footer">
-    <a id="footer-logo" href="<%= @home_page %>">
+    <a id="footer-logo" href="<%= @web_url %>">
       <img class="<%= @logo_class %>" src="<%= @logo %>" />
     </a>
     <div class="clear"></div>
@@ -8,7 +8,7 @@
     <!-- Footer Menu -->
     <nav id="footer-nav">
       <ul id="footer-menu">
-        <li class="<%= footer_home_class %>"><a href="<%= @home_page %>">Home</a></li>
+        <li class="<%= footer_home_class %>"><a href="<%= @web_url %>">Home</a></li>
         <li class="<%= current_footer_parent %>">
           <a href="<%= cashback_promotions_path %>">Solutions</a>
           <ul>
@@ -31,15 +31,8 @@
       <div class="clear"></div>
     </nav>
 
-    <!-- Copyright -->
-    <div id="copyright">
-      <p>Cashback and MYcashback  - Copyright &copy; 2017</p>
-    </div>
-
-    <!-- Credits -->
-    <div id="credits">
-      <a href="http://mc3.com.au/" target="_blank">MC3 Design</a>
-    </div>
+    <%= render partial: "components/copyright" %>
+    <%= render partial: "components/credits" %>
 
     <div class="clear"></div>
   </footer>

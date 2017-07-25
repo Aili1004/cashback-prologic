@@ -1,6 +1,6 @@
 <section id="header-container">
   <header id="header">
-    <a id="logo" href="<%= prologic_path %>">
+    <a id="logo" href="<%= ENV['PROLOGIC_URL'] %>">
       <img src="pro-logic/images/logo.png" />
     </a>
     <a id="phone" href="tel:61242979797"><i class="fa fa-phone"></i> +61 2 4297 9797</a>
@@ -135,7 +135,7 @@
       <div class="clear"></div>
     </div>
 
-    <a class="button" href="<%= root_path %>" target="_blank">Find out more</a>
+    <a class="button" href="<%= ENV['CASHBACK_AU_URL'] %>" target="_blank">Find out more</a>
   </article>
 </section>
 
@@ -189,15 +189,8 @@
         <div class="clear"></div>
       </nav>
 
-      <!-- Copyright -->
-      <div id="copyright">
-        <p>Cashback and MYcashback  - Copyright &copy; 2017</p>
-      </div>
-
-      <!-- Credits -->
-      <div id="credits">
-        <a href="http://mc3.com.au/" target="_blank">MC3 Design</a>
-      </div>
+      <%= render partial: "components/copyright" %>
+      <%= render partial: "components/credits" %>
 
       <div class="clear"></div>
     </footer>
