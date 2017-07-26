@@ -15,7 +15,11 @@
     <!-- Banner Content -->
     <div id="banner-content">
       <h1>Cash Back programs for winning businesses</h1>
-      <p>Australia’s leading cashback and loyalty program specialist</p>
+      <% if @is_au_site %>
+        <p>Australia’s leading cashback and loyalty program specialist</p>
+      <% else %>
+        <p>New Zealand's leading cashback and loyalty program specialist</p>
+      <% end %>
       <a href="#who-we-are-container" class="scrollDown">Learn more</a>
     </div>
   </article>
