@@ -23,7 +23,11 @@
 
       <!-- Column Right -->
       <div class="column-right column">
-        <img class="alignleft" src="images/cashback-image-1.png" />
+        <% if @is_au_site %>
+          <img class="alignleft" src="images/cashback-image-1.png" />
+        <% else %>
+          <img class="alignleft" src="images/cashback-image-NZ.png" />
+        <% end %>
       </div>
       <div class="clear"><!-- --></div>
     </article>

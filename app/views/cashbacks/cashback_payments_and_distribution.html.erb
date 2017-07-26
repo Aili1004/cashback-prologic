@@ -52,7 +52,11 @@
 
       <!-- Column Right -->
       <div class="column-right column">
-        <img class="alignleft" src="images/currency-image-2.png" />
+        <% if @is_au_site %>
+          <img class="alignleft" src="images/currency-image-2.png" />
+        <% else %>
+          <img class="alignleft" src="images/currency-image-2-NZ.png" />
+        <% end %>
       </div>
 
       <div class="clear"><!-- --></div>
