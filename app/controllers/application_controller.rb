@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
       @logo_class = "nz-logo"
       @phone = "tel:0800669487"
       @phone_display = " 0800 669 487"
-      @address = {line_1: "PO 147167", line_2: "Ponsonby, Auckland, 1144", line_3: ""}
+      @address = {line_1: "PO Box 147167", line_2: "Ponsonby", line_3: "Auckland, 1144"}
 
     else
       @web_url = ENV['CASHBACK_AU_URL']

@@ -42,7 +42,11 @@
     <article id="who-we-are">
       <div class="left">
         <h2>Who we are</h2>
-        <p><%= @site_name %> is Australia's leading cashback and loyalty program specialist.</p>
+        <% if @is_au_site %>
+          <p><%= ENV['CASHBACK_AU_SITE'] %> is Australia's leading cashback and loyalty program specialist.</p>
+        <% else %>
+          <p><%= ENV['CASHBACK_NZ_SITE'] %> is New Zealand's leading cashback and loyalty program specialist.</p>
+        <% end %>
         <p>Our Cash Back gift card and promotion services are used by some of the world's most powerful brands across a wide range of industries, delivering outstanding sales results time and time again.</p>
       </div>
 
