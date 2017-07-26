@@ -1,16 +1,17 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_action :base_url, :cashback_contents
+  before_action :cashback_contents
 
   private
 
-  def base_url
-    @base_url = request.path #TODO: Need to be changed to request.base_url after getting domains
-  end
-
   def cashback_contents
-    if @base_url.include?("/nz")
+    @original_url = request.original_url
+    @is_au_site = true
+
+    if @original_url.include?(ENV['CASHBACK_NZ_URL']) || request.query_parameters['site'] === "mycashback"
+      @is_au_site = false
+
       @web_url = ENV['CASHBACK_NZ_URL']
       @contact_email = ENV['CASHBACK_NZ_EMAIL']
 
