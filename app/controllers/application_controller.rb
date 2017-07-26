@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
       @is_au_site = false
 
       @web_url = ENV['CASHBACK_NZ_URL']
+      @site_name = ENV['CASHBACK_NZ_SITE']
       @contact_email = ENV['CASHBACK_NZ_EMAIL']
 
       @logo = "images/nz-logo.png"
@@ -23,6 +24,7 @@ class ApplicationController < ActionController::Base
 
     else
       @web_url = ENV['CASHBACK_AU_URL']
+      @site_name = ENV['CASHBACK_AU_SITE']
       @contact_email = ENV['CASHBACK_AU_EMAIL']
 
       @logo = "images/au-logo.png"
