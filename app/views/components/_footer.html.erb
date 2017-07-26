@@ -19,8 +19,7 @@
             <li class="<%= footer_promotion_management_class %>"><a href="<%= promotion_management_path %>">Promotion Management</a></li>
             <li class="<%= footer_gift_with_purchase_class %>" ><a href="<%= gift_with_purchase_path %>">Gift With Purchase</a></li>
 
-            <!-- TODO: modify below url -->
-            <% unless @base_url.include?("nz") %>
+            <% if @is_au_site %>
               <li class="<%= footer_eftpos_cash_back_cards_class %>"><a href="<%= eftpos_cash_back_cards_path %>">EFTPOS Cash Back Cards</a></li>
             <% end %>
           </ul>
