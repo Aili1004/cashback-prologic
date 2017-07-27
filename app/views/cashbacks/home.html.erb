@@ -1,14 +1,14 @@
 <%= render partial: "components/header", locals: { current_menu_parent: "", menu_home_class: "current-menu-item", menu_cashback_promotions_class: "", menu_cashback_payments_and_distribution_class: "",menu_loyalty_programs_class: "",
                                                     menu_competitions_sweepstakes_and_games_class: "", menu_promotion_management_class: "", menu_gift_with_purchase_class: "",
-                                                    menu_eftpos_cash_back_cards_class: "", menu_about_us_class: "", menu_contact_class: ""} %>
+                                                    menu_eftpos_cash_back_cards_class: "", menu_about_us_class: "", menu_register_class: "", menu_contact_class: ""} %>
 
 <!-- Banner -->
-<section id="banner-container" style="background: transparent url(images/banner.jpg) no-repeat center center;">
+<section id="banner-container" style="background: transparent url(cashbacks/images/banner.jpg) no-repeat center center;">
   <article id="banner">
     <!-- Graphics -->
     <div class="graphics">
       <div class="inner">
-        <img src="images/banner-graphics.png" />
+        <img src="cashbacks/images/banner-graphics.png" />
       </div>
     </div>
 
@@ -30,14 +30,14 @@
 <div id="wrapper">
   <section id="clients-bar-container">
     <article id="clients-bar">
-      <img src="images/canon-logo.png" />
-      <img src="images/nikon-logo.png" />
-      <img src="images/garmin-logo.png" />
-      <img src="images/adobe-logo.png" />
-      <img src="images/makita-logo.png" />
-      <img src="images/imation-logo.png" />
-      <img src="images/fujifilm-logo.png" />
-      <img src="images/netgear-logo.png" />
+      <img src="cashbacks/images/canon-logo.png" />
+      <img src="cashbacks/images/nikon-logo.png" />
+      <img src="cashbacks/images/garmin-logo.png" />
+      <img src="cashbacks/images/adobe-logo.png" />
+      <img src="cashbacks/images/makita-logo.png" />
+      <img src="cashbacks/images/imation-logo.png" />
+      <img src="cashbacks/images/fujifilm-logo.png" />
+      <img src="cashbacks/images/netgear-logo.png" />
     </article>
   </section>
 
@@ -55,7 +55,7 @@
       </div>
 
       <div class="right">
-        <img src="images/who-we-are-image.png" />
+        <img src="cashbacks/images/who-we-are-image.png" />
       </div>
 
       <a href="#why-it-works-container" class="scrollDown">More</a>
@@ -74,7 +74,7 @@
       </div>
 
       <div class="right">
-        <img src="images/why-it-works-image.png" />
+        <img src="cashbacks/images/why-it-works-image.png" />
       </div>
       <div class="clear"></div>
     </article>
@@ -86,28 +86,28 @@
       <h2>Our Solutions</h2>
       <div class="list">
         <div class="item">
-          <a href="<%= cashback_promotions_path %>" class="thumb"><img src="images/solution-1-thumb.png" /></a>
+          <a href="<%= cashback_promotions_path %>" class="thumb"><img src="cashbacks/images/solution-1-thumb.png" /></a>
           <h3><a href="<%= cashback_promotions_path %>">Cashback Promotions</a></h3>
           <p>Our promotion services are enormously flexible, covering EFTPOS Cash Back cards, EFT, cheques and digital gift cards.</p>
           <a href="<%= cashback_promotions_path %>" class="button">Find out more</a>
         </div>
 
         <div class="item">
-          <a href="<%= loyalty_programs_path %>" class="thumb"><img src="images/solution-2-thumb.png" /></a>
+          <a href="<%= loyalty_programs_path %>" class="thumb"><img src="cashbacks/images/solution-2-thumb.png" /></a>
           <h3><a href="<%= loyalty_programs_path %>">Gift cards and loyalty programs</a></h3>
           <p>Whether you're incentivising customers, staff or clients, branded EFTPOS gift cards are a visually striking and cost effective way to reach your goals.</p>
           <a href="<%= loyalty_programs_path %>" class="button">Find out more</a>
         </div>
 
         <div class="item">
-          <a href="<%= gift_with_purchase_path %>" class="thumb"><img src="images/solution-3-thumb.png" /></a>
+          <a href="<%= gift_with_purchase_path %>" class="thumb"><img src="cashbacks/images/solution-3-thumb.png" /></a>
           <h3><a href="<%= gift_with_purchase_path %>">Gift With Purchase</a></h3>
           <p>Gift with purchase (or premium offer) programs take advantage of that feeling of getting something for nothing. It’s a memorable and effective technique that will make your customer feel special.</p>
           <a href="<%= gift_with_purchase_path %>" class="button">Find out more</a>
         </div>
 
         <div class="item">
-          <a href="<%= competitions_sweepstakes_and_games_path %>" class="thumb"><img src="images/solution-4-thumb.png" /></a>
+          <a href="<%= competitions_sweepstakes_and_games_path %>" class="thumb"><img src="cashbacks/images/solution-4-thumb.png" /></a>
           <h3><a href="<%= competitions_sweepstakes_and_games_path %>">Contests, sweepstakes and games</a></h3>
           <p>Make shopping even more fun! Engage your customers with a wide range of competitions to give your loyalty programs a word-of-mouth boost.</p>
           <a href="<%= competitions_sweepstakes_and_games_path %>" class="button">Find out more</a>
@@ -122,5 +122,5 @@
 
   <%= render partial: "components/footer", locals: {current_footer_parent: "", footer_home_class: "current-menu-item", footer_cashback_promotions_class: "", footer_cashback_payments_and_distribution_class: "",footer_loyalty_programs_class: "",
                                                       footer_competitions_sweepstakes_and_games_class: "", footer_promotion_management_class: "", footer_gift_with_purchase_class: "",
-                                                      footer_eftpos_cash_back_cards_class: "", footer_about_us_class: "", footer_contact_class: ""} %>
+                                                      footer_eftpos_cash_back_cards_class: "", footer_about_us_class: "", footer_register_class: "", footer_contact_class: ""} %>
 </div>

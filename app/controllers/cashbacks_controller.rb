@@ -28,6 +28,9 @@ class CashbacksController < ApplicationController
   def about_us
   end
 
+  def register
+  end
+
   def contact
   end
 

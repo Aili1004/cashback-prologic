@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
       @site_name = ENV['CASHBACK_NZ_SITE']
       @contact_email = ENV['CASHBACK_NZ_EMAIL']
 
-      @logo = "images/nz-logo.png"
+      @logo = "cashbacks/images/nz-logo.png"
       @logo_class = "nz-logo"
       @phone = "tel:0800669487"
       @phone_display = " 0800 669 487"
@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
       @site_name = ENV['CASHBACK_AU_SITE']
       @contact_email = ENV['CASHBACK_AU_EMAIL']
 
-      @logo = "images/au-logo.png"
+      @logo = "cashbacks/images/au-logo.png"
       @logo_class = "au-logo"
       @phone = "tel:1300669487"
       @phone_display = " 1 300 669 487"

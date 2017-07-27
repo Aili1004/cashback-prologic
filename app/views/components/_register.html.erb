@@ -1,0 +1,26 @@
+<section id="register-container" class="contact-page">
+    <article id="register">
+
+      <div class="center">
+        <h2>Register</h2>
+        <p>I would like to receive future marketing information from <%= @site_name %> in the form of e-newsletters, updates and promotions.</p>
+      </div>
+
+      <div class="left">
+        <div id="contact-form">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="submit" value="Submit" />
+        </div>
+      </div>
+
+      <div class="right">
+        <p><%= @address[:line_1] %></p>
+        <p><%= @address[:line_2] %></p>
+        <p><%= @address[:line_3] %></p>
+        <p>Phone: <strong><%= @phone_display %></strong></p>
+      </div>
+
+      <div class="clear"></div>
+    </article>
+  </section>

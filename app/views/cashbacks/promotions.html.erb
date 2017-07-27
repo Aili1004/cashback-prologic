@@ -1,9 +1,9 @@
 <%= render partial: "components/header", locals: { current_menu_parent: "current-menu-parent", menu_home_class: "", menu_cashback_promotions_class: "current-menu-item", menu_cashback_payments_and_distribution_class: "",
                                                     menu_loyalty_programs_class: "", menu_competitions_sweepstakes_and_games_class: "", menu_promotion_management_class: "",
-                                                    menu_gift_with_purchase_class: "", menu_eftpos_cash_back_cards_class: "", menu_about_us_class: "", menu_contact_class: ""} %>
+                                                    menu_gift_with_purchase_class: "", menu_eftpos_cash_back_cards_class: "", menu_about_us_class: "", menu_register_class: "", menu_contact_class: ""} %>
 
 <!-- Page Banner -->
-<section id="page-banner-container" style="background: transparent url(images/cashback-banner.jpg) no-repeat center center;">
+<section id="page-banner-container" style="background: transparent url(cashbacks/images/cashback-banner.jpg) no-repeat center center;">
   <article id="page-banner">
     <h1>Cashback Promotions</h1>
     <h2>Giving your customers the rewards they deserve</h2>
@@ -24,9 +24,9 @@
       <!-- Column Right -->
       <div class="column-right column">
         <% if @is_au_site %>
-          <img class="alignleft" src="images/cashback-image-1.png" />
+          <img class="alignleft" src="cashbacks/images/cashback-image-1.png" />
         <% else %>
-          <img class="alignleft" src="images/cashback-image-NZ.png" />
+          <img class="alignleft" src="cashbacks/images/cashback-image-NZ.png" />
         <% end %>
       </div>
       <div class="clear"><!-- --></div>
@@ -49,7 +49,7 @@
 
       <!-- Column Right -->
       <div class="column-right column">
-        <img class="alignleft" src="images/cashback-image-2.png" />
+        <img class="alignleft" src="cashbacks/images/cashback-image-2.png" />
       </div>
 
       <div class="clear"><!-- --></div>
@@ -57,7 +57,7 @@
   </section>
 
   <!-- Content Background Image -->
-  <section class="container image" style="background: transparent url(images/cashback-image-3.jpg) no-repeat center center;">
+  <section class="container image" style="background: transparent url(cashbacks/images/cashback-image-3.jpg) no-repeat center center;">
     <article class="content">
 
       <!-- Column Left -->
@@ -77,5 +77,5 @@
 
   <%= render partial: "components/footer", locals: {current_footer_parent: "current-menu-parent", footer_home_class: "", footer_cashback_promotions_class: "current-menu-item", footer_cashback_payments_and_distribution_class: "",
                                                       footer_loyalty_programs_class: "", footer_competitions_sweepstakes_and_games_class: "", footer_promotion_management_class: "",
-                                                      footer_gift_with_purchase_class: "", footer_eftpos_cash_back_cards_class: "", footer_about_us_class: "", footer_contact_class: ""} %>
+                                                      footer_gift_with_purchase_class: "", footer_eftpos_cash_back_cards_class: "", footer_about_us_class: "", footer_register_class: "", footer_contact_class: ""} %>
 </div>
