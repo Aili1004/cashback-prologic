@@ -8,9 +8,12 @@
 
       <div class="left">
         <div id="contact-form">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
+          <%= form_tag('/register_cashback', method: :post) do %>
+            <label>Contact Us</label>
+            <%= text_field_tag "name", "", :placeholder => "Name" %>
+            <%= text_field_tag "email", "", :placeholder => "Email" %>
             <input type="submit" value="Submit" />
+          <% end %>
         </div>
       </div>
 
