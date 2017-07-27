@@ -15,48 +15,48 @@ input[type="submit"] {-webkit-appearance: none;}
 /***** Fonts *****/
 @font-face {
     font-family: 'MetropolisLight';
-    src: url('fonts/metropolis-light-webfont.eot');
-    src: url('fonts/metropolis-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/metropolis-light-webfont.woff2') format('woff2'),
-         url('fonts/metropolis-light-webfont.woff') format('woff'),
-         url('fonts/metropolis-light-webfont.ttf') format('truetype'),
-         url('fonts/metropolis-light-webfont.svg#metropolislight') format('svg');
+    src: url('../fonts/metropolis-light-webfont.eot');
+    src: url('../fonts/metropolis-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/metropolis-light-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-light-webfont.woff') format('woff'),
+         url('../fonts/metropolis-light-webfont.ttf') format('truetype'),
+         url('../fonts/metropolis-light-webfont.svg#metropolislight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MetropolisBold';
-    src: url('fonts/metropolis-bold-webfont.eot');
-    src: url('fonts/metropolis-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/metropolis-bold-webfont.woff2') format('woff2'),
-         url('fonts/metropolis-bold-webfont.woff') format('woff'),
-         url('fonts/metropolis-bold-webfont.ttf') format('truetype'),
-         url('fonts/metropolis-bold-webfont.svg#metropolisbold') format('svg');
+    src: url('../fonts/metropolis-bold-webfont.eot');
+    src: url('../fonts/metropolis-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/metropolis-bold-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-bold-webfont.woff') format('woff'),
+         url('../fonts/metropolis-bold-webfont.ttf') format('truetype'),
+         url('../fonts/metropolis-bold-webfont.svg#metropolisbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MetropolisMedium';
-    src: url('fonts/metropolis-medium-webfont.eot');
-    src: url('fonts/metropolis-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/metropolis-medium-webfont.woff2') format('woff2'),
-         url('fonts/metropolis-medium-webfont.woff') format('woff'),
-         url('fonts/metropolis-medium-webfont.ttf') format('truetype'),
-         url('fonts/metropolis-medium-webfont.svg#metropolismedium') format('svg');
+    src: url('../fonts/metropolis-medium-webfont.eot');
+    src: url('../fonts/metropolis-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/metropolis-medium-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-medium-webfont.woff') format('woff'),
+         url('../fonts/metropolis-medium-webfont.ttf') format('truetype'),
+         url('../fonts/metropolis-medium-webfont.svg#metropolismedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('fonts/metropolis-regular-webfont.eot');
-    src: url('fonts/metropolis-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/metropolis-regular-webfont.woff2') format('woff2'),
-         url('fonts/metropolis-regular-webfont.woff') format('woff'),
-         url('fonts/metropolis-regular-webfont.ttf') format('truetype'),
-         url('fonts/metropolis-regular-webfont.svg#metropolisregular') format('svg');
+    src: url('../fonts/metropolis-regular-webfont.eot');
+    src: url('../fonts/metropolis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/metropolis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-regular-webfont.woff') format('woff'),
+         url('../fonts/metropolis-regular-webfont.ttf') format('truetype'),
+         url('../fonts/metropolis-regular-webfont.svg#metropolisregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -67,6 +67,7 @@ input[type="submit"] {-webkit-appearance: none;}
 #wrapper {position:relative; z-index:1000; background-color:#ffffff;}
 
 
+.social-media {width: 30px; border-radius: 5px}
 
 
 /***** Banner *****/
@@ -75,7 +76,7 @@ input[type="submit"] {-webkit-appearance: none;}
 #banner-content {text-align:center; padding:0 15px 0 15px; color:#ffffff; font-size:25px; line-height:30px; font-family:MetropolisLight; z-index:100; position:relative;}
 #banner-content h1 {font-weight:normal; font-family:MetropolisLight; color:#ffffff; font-size:62px; line-height:70px;  padding-bottom:16px;}
 #banner-content a {text-decoration:none; display:inline-block; color:#787878; text-transform:uppercase; font-size:17px; letter-spacing:1px; font-family:Metropolis; background:#ffffff; border-radius:24px; padding:10px 77px 8px 29px; position:relative; margin-top:55px;}
-#banner-content a:after {content:""; display:block; position:absolute; right:26px; top:50%; margin-top:-13px; width:17px; height:27px; background: transparent url(images/arrow-down.png) no-repeat left top;}
+#banner-content a:after {content:""; display:block; position:absolute; right:26px; top:50%; margin-top:-13px; width:17px; height:27px; background: transparent url(../images/arrow-down.png) no-repeat left top;}
 #banner-content a:hover {background-color:#00c6fc; color:#000}
 
 
@@ -155,7 +156,7 @@ input[type="submit"] {-webkit-appearance: none;}
 
 
 /***** Contact Us *****/
-#contact-us-container {padding:90px 15px 154px 15px; background: transparent url(images/contact-bg.jpg) no-repeat center center; background-size:cover;}
+#contact-us-container {padding:90px 15px 154px 15px; background: transparent url(../images/contact-bg.jpg) no-repeat center center; background-size:cover;}
 
 #contact-us {max-width:1082px; margin:0 auto; text-align:center; color:#ffffff;}
 #contact-us .left {width:60.90%; margin-right:10.25%; float:left;}
@@ -187,7 +188,7 @@ input[type="submit"] {-webkit-appearance: none;}
 
 
 /***** Footer *****/
-#footer-container {background:#0373a6 url(images/footer-bg.png) repeat-x left top;}
+#footer-container {background:#0373a6 url(../images/footer-bg.png) repeat-x left top;}
 #footer {max-width:1920px; margin:0 auto; padding:73px 36px 31px 130px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 
@@ -231,7 +232,7 @@ input[type="submit"] {-webkit-appearance: none;}
 
 
 /***** Services *****/
-#services-container {padding:0 15px; background:#ffffff url(images/gradient.png) repeat-x left top; text-align:center;}
+#services-container {padding:0 15px; background:#ffffff url(../images/gradient.png) repeat-x left top; text-align:center;}
 #services {max-width:1200px; margin:0 auto; padding:109px 0 49px 0;}
 #services .columns {text-align:left;}
 
@@ -267,7 +268,7 @@ input[type="submit"] {-webkit-appearance: none;}
 .page-content ul {padding:12px 0 12px 19px; color:#0099b6; font-family:MetropolisBold;}
 .page-content ul li {padding-bottom:12px;}
 
-.page-content .button {display:inline-block; padding:14px 54px 11px 24px; color:#ffffff; text-decoration:none; border-radius:24px; text-transform:uppercase; font-size:17px; line-height:24px; background:#d82028 url(images/right-arrow.png) no-repeat 92% center; margin:33px 0 0 0;}
+.page-content .button {display:inline-block; padding:14px 54px 11px 24px; color:#ffffff; text-decoration:none; border-radius:24px; text-transform:uppercase; font-size:17px; line-height:24px; background:#d82028 url(../images/right-arrow.png) no-repeat 92% center; margin:33px 0 0 0;}
 .page-content .button:hover {background-color:#00c6fc;}
 
 

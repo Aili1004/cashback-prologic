@@ -15,48 +15,48 @@ input[type="submit"] {-webkit-appearance: none;}
 /***** Fonts *****/
 @font-face {
     font-family: 'MetropolisLight';
-    src: url('fonts/metropolis-light-webfont.eot');
-    src: url('fonts/metropolis-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/metropolis-light-webfont.woff2') format('woff2'),
-         url('fonts/metropolis-light-webfont.woff') format('woff'),
-         url('fonts/metropolis-light-webfont.ttf') format('truetype'),
-         url('fonts/metropolis-light-webfont.svg#metropolislight') format('svg');
+    src: url('../fonts/metropolis-light-webfont.eot');
+    src: url('../fonts/metropolis-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/metropolis-light-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-light-webfont.woff') format('woff'),
+         url('../fonts/metropolis-light-webfont.ttf') format('truetype'),
+         url('../fonts/metropolis-light-webfont.svg#metropolislight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MetropolisBold';
-    src: url('fonts/metropolis-bold-webfont.eot');
-    src: url('fonts/metropolis-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/metropolis-bold-webfont.woff2') format('woff2'),
-         url('fonts/metropolis-bold-webfont.woff') format('woff'),
-         url('fonts/metropolis-bold-webfont.ttf') format('truetype'),
-         url('fonts/metropolis-bold-webfont.svg#metropolisbold') format('svg');
+    src: url('../fonts/metropolis-bold-webfont.eot');
+    src: url('../fonts/metropolis-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/metropolis-bold-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-bold-webfont.woff') format('woff'),
+         url('../fonts/metropolis-bold-webfont.ttf') format('truetype'),
+         url('../fonts/metropolis-bold-webfont.svg#metropolisbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MetropolisMedium';
-    src: url('fonts/metropolis-medium-webfont.eot');
-    src: url('fonts/metropolis-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/metropolis-medium-webfont.woff2') format('woff2'),
-         url('fonts/metropolis-medium-webfont.woff') format('woff'),
-         url('fonts/metropolis-medium-webfont.ttf') format('truetype'),
-         url('fonts/metropolis-medium-webfont.svg#metropolismedium') format('svg');
+    src: url('../fonts/metropolis-medium-webfont.eot');
+    src: url('../fonts/metropolis-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/metropolis-medium-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-medium-webfont.woff') format('woff'),
+         url('../fonts/metropolis-medium-webfont.ttf') format('truetype'),
+         url('../fonts/metropolis-medium-webfont.svg#metropolismedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('fonts/metropolis-regular-webfont.eot');
-    src: url('fonts/metropolis-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/metropolis-regular-webfont.woff2') format('woff2'),
-         url('fonts/metropolis-regular-webfont.woff') format('woff'),
-         url('fonts/metropolis-regular-webfont.ttf') format('truetype'),
-         url('fonts/metropolis-regular-webfont.svg#metropolisregular') format('svg');
+    src: url('../fonts/metropolis-regular-webfont.eot');
+    src: url('../fonts/metropolis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/metropolis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-regular-webfont.woff') format('woff'),
+         url('../fonts/metropolis-regular-webfont.ttf') format('truetype'),
+         url('../fonts/metropolis-regular-webfont.svg#metropolisregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -69,7 +69,7 @@ input[type="submit"] {-webkit-appearance: none;}
 #footer-logo .au-logo {display:block;}
 #footer-logo .nz-logo {display:block;}
 
-
+.social-media {width: 30px; border-radius: 5px}
 
 
 
@@ -263,6 +263,43 @@ input[type="submit"] {-webkit-appearance: none;}
 #contact-us-container.contact-page #contact-us .right p:first-of-type {padding-bottom:7px;}
 
 
+/***** Register *****/
+#register-container {padding:90px 15px 154px 15px; background: transparent url(../images/contact-bg.jpg) no-repeat center center; background-size:cover;}
+
+#register {max-width:1082px; margin:0 auto; text-align:center; color:#ffffff;}
+#register .left {width:60.90%; margin-right:10.25%; float:left;}
+#register .right {width:28.85%; float:left; text-align:left; padding-top:107px;}
+
+#register .right p {padding-bottom:7px;}
+#register .right p:first-of-type {padding-bottom:44px;}
+#register .right p:last-of-type {font-size:25px; padding-top:26px;}
+#register .right strong {font-weight:normal; font-family:MetropolisBold;}
+#register .right a {color:#ffffff; text-decoration:none;}
+
+#register label {color:#ffffff; font-size:37px; line-height:44px;  font-family:MetropolisLight; text-align:right; display:block; font-weight:normal; padding:0 35px 47px 0;}
+#register input[type="text"], #register input[type="email"] {height:82px; line-height:82px; padding-left:30px; background-color:#ffffff; border:none; border-radius:9px; color:#757575;  font-family:Metropolis; font-size:19px; width:100%; margin-bottom:29px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+#register textarea {height:149px; line-height:30px; max-height:149px; min-height:149px; min-width:100%; max-width:100%; padding-left:30px; background-color:#ffffff; border:none; border-radius:9px; color:#757575;  font-family:Metropolis; font-size:19px; width:100%; margin-bottom:27px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top:26px;}
+#register input[type="submit"] {height:82px; line-height:82px; background-color:#f48f35; text-align:center; border:1px solid #ffffff; border-radius:9px; color:#ffffff;  font-family:Metropolis; font-size:28px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+#register input[type="submit"]:hover {cursor:pointer; background-color:#ffffff; color:#f48f35;}
+
+#register ::-webkit-input-placeholder {color:#757575;}
+#register :-moz-placeholder {color:#757575; opacity:1;}
+#register ::-moz-placeholder {color:#757575; opacity:1;}
+#register :-ms-input-placeholder {color:#757575;}
+
+#register-container.no-image {background-image:none !important; background-color:#e4e4dc;}
+#register-container.no-image #register {color:#4d4d4d;}
+#register-container.no-image #register .right a {color:#4d4d4d;}
+#register-container.no-image #register label {color:#494949;}
+
+
+#register-container.contact-page {background: transparent url(../images/contact-page-bg.jpg) no-repeat center center; background-size:cover; background-attachment:fixed;}
+#register-container.contact-page #register label {display:none !important;}
+#register-container.contact-page .center {max-width:954px; margin:0 auto; text-align:center; padding:160px 0 108px 0; font-family:MetropolisLight;}
+#register-container.contact-page h2 {font-weight:normal; font-family:MetropolisLight; font-size:61px; line-height:70px; padding-bottom:14px;}
+#register-container.contact-page p {font-size:25px; line-height:30px;}
+#register-container.contact-page #register .right {padding-top:0;}
+#register-container.contact-page #register .right p:first-of-type {padding-bottom:7px;}
 
 
 /***** Footer *****/
@@ -431,6 +468,12 @@ input[type="submit"] {-webkit-appearance: none;}
     #contact-us-container.contact-page .center {padding:121px 0 88px 0;}
     #contact-us-container.contact-page h2 {font-size:61px; line-height:70px; padding-bottom:14px;}
     #contact-us-container.contact-page p {font-size:25px; line-height:30px;}
+
+
+    /***** Register *****/
+    #register-container.contact-page .center {padding:121px 0 88px 0;}
+    #register-container.contact-page h2 {font-size:61px; line-height:70px; padding-bottom:14px;}
+    #register-container.contact-page p {font-size:25px; line-height:30px;}
 }
 
 
@@ -491,6 +534,18 @@ input[type="submit"] {-webkit-appearance: none;}
     #contact-us input[type="submit"] {height:62px; line-height:62px;}
 
 
+    /***** Register *****/
+    #register-container {padding:60px 15px 100px 15px;}
+    #register .right {padding-top:87px;}
+    #register .right p:first-of-type {padding-bottom:34px;}
+    #register .right p:last-of-type {font-size:22px; padding-top:16px;}
+
+    #register label {padding:0 35px 27px 0;}
+    #register input[type="text"], #register input[type="email"] {height:62px; line-height:62px; margin-bottom:20px;}
+    #register textarea {height:129px; line-height:30px; max-height:129px; min-height:129px; margin-bottom:20px; padding-top:16px;}
+    #register input[type="submit"] {height:62px; line-height:62px;}
+
+
     /***** Contact Us *****/
     #footer {padding:43px 15px 21px 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
@@ -522,6 +577,12 @@ input[type="submit"] {-webkit-appearance: none;}
     #contact-us-container.contact-page .center {padding:130px 0 66px 0;}
     #contact-us-container.contact-page h2 {font-size:48px; line-height:56px; padding-bottom:12px;}
     #contact-us-container.contact-page p {font-size:23px; line-height:28px;}
+
+
+    /***** Register *****/
+    #register-container.contact-page .center {padding:130px 0 66px 0;}
+    #register-container.contact-page h2 {font-size:48px; line-height:56px; padding-bottom:12px;}
+    #register-container.contact-page p {font-size:23px; line-height:28px;}
 
 
     .content .column-left.margin {margin-top:74px;}
@@ -633,6 +694,12 @@ input[type="submit"] {-webkit-appearance: none;}
     #contact-us-container.contact-page .center {padding:110px 0 50px 0;}
     #contact-us-container.contact-page h2 {font-size:42px; line-height:52px; padding-bottom:12px;}
     #contact-us-container.contact-page p {font-size:22px; line-height:28px;}
+
+
+    /***** Register *****/
+    #register-container.contact-page .center {padding:110px 0 50px 0;}
+    #register-container.contact-page h2 {font-size:42px; line-height:52px; padding-bottom:12px;}
+    #register-container.contact-page p {font-size:22px; line-height:28px;}
 }
 
 
@@ -704,6 +771,12 @@ input[type="submit"] {-webkit-appearance: none;}
     #contact-us-container.contact-page .center {padding:80px 0 40px 0;}
     #contact-us-container.contact-page h2 {font-size:42px; line-height:52px; padding-bottom:12px;}
     #contact-us-container.contact-page p {font-size:22px; line-height:28px;}
+
+
+    /***** Register *****/
+    #register-container.contact-page .center {padding:80px 0 40px 0;}
+    #register-container.contact-page h2 {font-size:42px; line-height:52px; padding-bottom:12px;}
+    #register-container.contact-page p {font-size:22px; line-height:28px;}
 }
 
 
@@ -766,6 +839,18 @@ input[type="submit"] {-webkit-appearance: none;}
     #contact-us input[type="submit"] {height:50px; line-height:50px; font-size:20px; border-radius:5px;}
 
 
+    /***** Register *****/
+    #register-container {padding:30px 15px 35px 15px;}
+    #register .left {float:none; width:auto; margin-right:0;}
+    #register .right {padding-top:25px !important; float:none; width:auto;}
+    #register .right p:first-of-type {padding-bottom:15px;}
+    #register .right p:last-of-type {font-size:18px; padding-top:12px;}
+    #register label {padding:0 0 15px 0; text-align:center;}
+    #register input[type="text"], #register input[type="email"] {height:50px; line-height:50px; margin-bottom:15px; padding-left:15px; border-radius:5px;}
+    #register textarea {height:109px; line-height:30px; max-height:109px; min-height:109px; margin-bottom:15px; padding-top:10px; padding-left:15px; border-radius:5px;}
+    #register input[type="submit"] {height:50px; line-height:50px; font-size:20px; border-radius:5px;}
+
+
     /***** Footer *****/
     #footer {padding:10px 15px 8px 15px; text-align:center;}
 
@@ -825,4 +910,10 @@ input[type="submit"] {-webkit-appearance: none;}
     #contact-us-container.contact-page .center {padding:80px 0 30px 0;}
     #contact-us-container.contact-page h2 {font-size:28px; line-height:34px; padding-bottom:10px;}
     #contact-us-container.contact-page p {font-size:18px; line-height:24px;}
+
+
+    /***** Register *****/
+    #register-container.contact-page .center {padding:80px 0 30px 0;}
+    #register-container.contact-page h2 {font-size:28px; line-height:34px; padding-bottom:10px;}
+    #register-container.contact-page p {font-size:18px; line-height:24px;}
 }

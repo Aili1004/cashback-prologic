@@ -28,6 +28,14 @@ class CashbacksController < ApplicationController
   def about_us
   end
 
+  def register
+  end
+
+  def register_cashback
+    RegisterMailer.register_cashback(@contact_email, params[:name], params[:email]).deliver_later
+    redirect_to @web_url
+  end
+
   def contact
   end
 
