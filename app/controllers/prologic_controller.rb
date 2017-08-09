@@ -1,5 +1,5 @@
 class PrologicController < ApplicationController
-  layout "pro_logic"
+  layout "pro_logic/home"
 
   def home
   end
