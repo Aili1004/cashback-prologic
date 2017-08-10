@@ -1,22 +1,11 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_action :get_contents
-  layout :set_layout
-
-  private
-
-  def set_layout
-    if is_matching_url(ENV['PROLOGIC_URL'], "prologic")
-      "layouts/pro_logic"
-    else
-      "layouts/cashbacks"
-    end
-  end
-
-  def get_contents
+  def cashback_contents
+    @original_url = request.original_url
     @is_au_site = true
-    if is_matching_url(ENV['CASHBACK_NZ_URL'], "mycashback")
+
+    if @original_url.include?(ENV['CASHBACK_NZ_URL']) || request.query_parameters['site'] === "mycashback"
       @is_au_site = false
 
       @site_name = ENV['CASHBACK_NZ_SITE']
