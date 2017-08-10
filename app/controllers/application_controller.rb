@@ -9,10 +9,7 @@ class ApplicationController < ActionController::Base
     @original_url = request.original_url
     @is_au_site = true
 
-    if @original_url.include?(ENV['PROLOGIC_URL']) || request.query_parameters['site'] === "prologic"
-      render 'layouts/pro_logic'
-
-    elsif @original_url.include?(ENV['CASHBACK_NZ_URL']) || request.query_parameters['site'] === "mycashback"
+    if @original_url.include?(ENV['CASHBACK_NZ_URL']) || request.query_parameters['site'] === "mycashback"
       @is_au_site = false
 
       @site_name = ENV['CASHBACK_NZ_SITE']
