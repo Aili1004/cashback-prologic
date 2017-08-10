@@ -2,14 +2,22 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :get_contents
+  layout :set_layout
 
   private
 
+  def set_layout
+    if is_matching_url(ENV['PROLOGIC_URL'], "prologic")
+      "layouts/pro_logic"
+    else
+      "layouts/cashbacks"
+    end
+  end
+
   def get_contents
-    @original_url = request.original_url
     @is_au_site = true
 
-    if @original_url.include?(ENV['CASHBACK_NZ_URL']) || request.query_parameters['site'] === "mycashback"
+    if is_matching_url(ENV['CASHBACK_NZ_URL'], "mycashback")
       @is_au_site = false
 
       @site_name = ENV['CASHBACK_NZ_SITE']
@@ -39,5 +47,9 @@ class ApplicationController < ActionController::Base
       @twitter_url = "https://twitter.com/CashBackcomau"
       @linkedin_url = "https://www.linkedin.com/company-beta/3007416/"
     end
+  end
+
+  def is_matching_url url, site
+    request.original_url.include?(url) || request.query_parameters['site'] === site
   end
 end
