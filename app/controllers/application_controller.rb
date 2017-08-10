@@ -1,11 +1,11 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_action :cashback_contents
+  before_action :get_contents
 
   private
 
-  def cashback_contents
+  def get_contents
     @original_url = request.original_url
     @is_au_site = true
 
