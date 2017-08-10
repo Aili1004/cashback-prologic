@@ -33,7 +33,7 @@ class CashbacksController < ApplicationController
 
   def register_cashback
     RegisterMailer.register_cashback(@contact_email, params[:name], params[:email]).deliver_later
-    redirect_to @web_url
+    redirect_to '/'
   end
 
   def contact
@@ -41,6 +41,6 @@ class CashbacksController < ApplicationController
 
   def contact_cashback
     ContactMailer.contact_cashback(@contact_email, params[:name], params[:email], params[:message]).deliver_later
-    redirect_to @web_url
+    redirect_to '/'
   end
 end
