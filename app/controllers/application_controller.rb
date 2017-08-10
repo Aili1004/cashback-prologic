@@ -15,7 +15,6 @@ class ApplicationController < ActionController::Base
     elsif @original_url.include?(ENV['CASHBACK_NZ_URL']) || request.query_parameters['site'] === "mycashback"
       @is_au_site = false
 
-      @web_url = ENV['CASHBACK_NZ_URL']
       @site_name = ENV['CASHBACK_NZ_SITE']
       @contact_email = ENV['CASHBACK_NZ_EMAIL']
 
@@ -30,7 +29,6 @@ class ApplicationController < ActionController::Base
       @linkedin_url = "https://www.linkedin.com/company-beta/18047407/"
 
     else
-      @web_url = ENV['CASHBACK_AU_URL']
       @site_name = ENV['CASHBACK_AU_SITE']
       @contact_email = ENV['CASHBACK_AU_EMAIL']
 
