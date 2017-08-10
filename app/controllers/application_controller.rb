@@ -16,7 +16,6 @@ class ApplicationController < ActionController::Base
 
   def get_contents
     @is_au_site = true
-
     if is_matching_url(ENV['CASHBACK_NZ_URL'], "mycashback")
       @is_au_site = false
 
