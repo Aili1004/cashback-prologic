@@ -1,5 +1,6 @@
 class CashbacksController < ApplicationController
   layout "cashbacks"
+  before_action :cashback_contents
 
   def home
   end

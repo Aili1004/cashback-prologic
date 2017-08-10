@@ -1,18 +1,18 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_action :cashback_contents
-
-  private
+  # def pro_logic_contects
+  #   @original_url = request.original_url
+  #   if @original_url.include?(ENV['PROLOGIC_URL']) || request.query_parameters['site'] === "prologic"
+  #     render :template => "layouts/pro_logic"
+  #   end
+  # end
 
   def cashback_contents
     @original_url = request.original_url
     @is_au_site = true
 
-    if @original_url.include?(ENV['PROLOGIC_URL']) || request.query_parameters['site'] === "prologic"
-      render :template => "layouts/pro_logic"
-
-    elsif @original_url.include?(ENV['CASHBACK_NZ_URL']) || request.query_parameters['site'] === "mycashback"
+    if @original_url.include?(ENV['CASHBACK_NZ_URL']) || request.query_parameters['site'] === "mycashback"
       @is_au_site = false
 
       @site_name = ENV['CASHBACK_NZ_SITE']
