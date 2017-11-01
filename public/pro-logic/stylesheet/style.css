@@ -104,14 +104,16 @@ input[type="submit"] {-webkit-appearance: none;}
 
 
 /***** Phone *****/
-#phone {float:right; text-decoration:none; color:#ffffff; cursor:default; color:#00c6fc; font-family:MetropolisMedium; font-size:22px; line-height:28px;}
+.phones {float: right;}
+
+#phone {text-decoration:none; color:#ffffff; cursor:default; color:#00c6fc; font-family:MetropolisMedium; font-size:22px; line-height:28px; display: block}
 #phone i {font-size:28px; margin-right:1px; position:relative; top:3px;}
 
-
-
+#international-phone {font-size: 14px; text-align: right; text-decoration:none; cursor:default; color:#00c6fc; font-family:MetropolisMedium; line-height:28px; display: block}
+#international-phone i {font-size: 16px; margin-right:1px; position:relative; top:3px;}
 
 /***** Menu *****/
-#nav {float:right; clear:right; padding-top:32px;}
+#nav {float:right; clear:right; padding-top:7px;}
 #menu {list-style:none;}
 
 #menu > li {float:left; margin-left:24px; position:relative; padding-bottom:10px;}
@@ -390,7 +392,7 @@ input[type="submit"] {-webkit-appearance: none;}
 
 
     /***** Phone *****/
-    #phone {display:none;}
+    #phone, #international-phone {display:none;}
 
 
     /***** Services *****/
